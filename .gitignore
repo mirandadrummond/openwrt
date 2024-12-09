@@ -7,7 +7,9 @@
 /.config.old
 /.toolchain_build_ver
 /bin
-/build_dir
+/build_dir/host
+/build_dir/hostpkg
+/build_dir/toolchain-mips_24kc_gcc-7.3.0_musl
 /staging_dir
 /tmp
 /logs

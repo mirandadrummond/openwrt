@@ -1,0 +1,11 @@
+/mnt/md0/miranda/openwrt/build_dir/target-mips_24kc_musl/rpcd-2023-07-01-c07ab2f9/CMakeFiles/rpcd.dir
+/mnt/md0/miranda/openwrt/build_dir/target-mips_24kc_musl/rpcd-2023-07-01-c07ab2f9/CMakeFiles/file_plugin.dir
+/mnt/md0/miranda/openwrt/build_dir/target-mips_24kc_musl/rpcd-2023-07-01-c07ab2f9/CMakeFiles/rpcsys_plugin.dir
+/mnt/md0/miranda/openwrt/build_dir/target-mips_24kc_musl/rpcd-2023-07-01-c07ab2f9/CMakeFiles/iwinfo_plugin.dir
+/mnt/md0/miranda/openwrt/build_dir/target-mips_24kc_musl/rpcd-2023-07-01-c07ab2f9/CMakeFiles/ucode_plugin.dir
+/mnt/md0/miranda/openwrt/build_dir/target-mips_24kc_musl/rpcd-2023-07-01-c07ab2f9/CMakeFiles/edit_cache.dir
+/mnt/md0/miranda/openwrt/build_dir/target-mips_24kc_musl/rpcd-2023-07-01-c07ab2f9/CMakeFiles/rebuild_cache.dir
+/mnt/md0/miranda/openwrt/build_dir/target-mips_24kc_musl/rpcd-2023-07-01-c07ab2f9/CMakeFiles/list_install_components.dir
+/mnt/md0/miranda/openwrt/build_dir/target-mips_24kc_musl/rpcd-2023-07-01-c07ab2f9/CMakeFiles/install.dir
+/mnt/md0/miranda/openwrt/build_dir/target-mips_24kc_musl/rpcd-2023-07-01-c07ab2f9/CMakeFiles/install/local.dir
+/mnt/md0/miranda/openwrt/build_dir/target-mips_24kc_musl/rpcd-2023-07-01-c07ab2f9/CMakeFiles/install/strip.dir

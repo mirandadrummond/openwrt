@@ -1,0 +1,25 @@
+[binaries]
+c = ['mips-openwrt-linux-musl-gcc',]
+cpp = ['mips-openwrt-linux-musl-g++',]
+ar = 'mips-openwrt-linux-musl-gcc-ar'
+strip = 'mips-openwrt-linux-musl-strip'
+nm = 'mips-openwrt-linux-musl-gcc-nm'
+pkgconfig = '/mnt/md0/miranda/openwrt/staging_dir/host/bin/pkg-config'
+cmake = '/mnt/md0/miranda/openwrt/staging_dir/host/bin/cmake'
+python = '/mnt/md0/miranda/openwrt/staging_dir/host/bin/python3'
+
+[built-in options]
+c_args = ['-Os', '-pipe', '-mno-branch-likely', '-mips32r2', '-mtune=24kc', '-fno-caller-saves', '-fno-plt', '-fhonour-copts', '-msoft-float', '-fmacro-prefix-map=/mnt/md0/miranda/openwrt/build_dir/target-mips_24kc_musl/util-linux-2.39=util-linux-2.39', '-mips16', '-minterlink-mips16', '-Wformat', '-Werror=format-security', '-fstack-protector', '-D_FORTIFY_SOURCE=1', '-Wl,-z,now', '-Wl,-z,relro', '-I/mnt/md0/miranda/openwrt/staging_dir/toolchain-mips_24kc_gcc-12.3.0_musl/usr/include', '-I/mnt/md0/miranda/openwrt/staging_dir/toolchain-mips_24kc_gcc-12.3.0_musl/include/fortify', '-I/mnt/md0/miranda/openwrt/staging_dir/toolchain-mips_24kc_gcc-12.3.0_musl/include',]
+c_link_args = ['-L/mnt/md0/miranda/openwrt/staging_dir/toolchain-mips_24kc_gcc-12.3.0_musl/usr/lib', '-L/mnt/md0/miranda/openwrt/staging_dir/toolchain-mips_24kc_gcc-12.3.0_musl/lib', '-znow', '-zrelro',]
+cpp_args = ['-Os', '-pipe', '-mno-branch-likely', '-mips32r2', '-mtune=24kc', '-fno-caller-saves', '-fno-plt', '-fhonour-copts', '-msoft-float', '-fmacro-prefix-map=/mnt/md0/miranda/openwrt/build_dir/target-mips_24kc_musl/util-linux-2.39=util-linux-2.39', '-mips16', '-minterlink-mips16', '-Wformat', '-Werror=format-security', '-fstack-protector', '-D_FORTIFY_SOURCE=1', '-Wl,-z,now', '-Wl,-z,relro', '-mips16', '-minterlink-mips16', '-I/mnt/md0/miranda/openwrt/staging_dir/toolchain-mips_24kc_gcc-12.3.0_musl/usr/include', '-I/mnt/md0/miranda/openwrt/staging_dir/toolchain-mips_24kc_gcc-12.3.0_musl/include/fortify', '-I/mnt/md0/miranda/openwrt/staging_dir/toolchain-mips_24kc_gcc-12.3.0_musl/include',]
+cpp_link_args = ['-L/mnt/md0/miranda/openwrt/staging_dir/toolchain-mips_24kc_gcc-12.3.0_musl/usr/lib', '-L/mnt/md0/miranda/openwrt/staging_dir/toolchain-mips_24kc_gcc-12.3.0_musl/lib', '-znow', '-zrelro',]
+prefix = '/usr'
+
+[host_machine]
+system = 'linux'
+cpu_family = 'mips'
+cpu = 'generic'
+endian = 'big'
+
+[properties]
+needs_exe_wrapper = true

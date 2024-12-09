@@ -1,0 +1,1 @@
+/mnt/md0/miranda/openwrt/staging_dir/host/share/aclocal/ltversion.m4

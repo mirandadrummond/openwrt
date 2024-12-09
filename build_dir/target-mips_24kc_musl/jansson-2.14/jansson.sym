@@ -1,0 +1,4 @@
+JANSSON_4 {
+    global:
+          *;
+};

@@ -1,0 +1,8 @@
+/mnt/md0/miranda/openwrt/build_dir/target-mips_24kc_musl/libnl-tiny-2023-07-27-bc92a280/CMakeFiles/nl-tiny.dir
+/mnt/md0/miranda/openwrt/build_dir/target-mips_24kc_musl/libnl-tiny-2023-07-27-bc92a280/CMakeFiles/nl-tiny-static.dir
+/mnt/md0/miranda/openwrt/build_dir/target-mips_24kc_musl/libnl-tiny-2023-07-27-bc92a280/CMakeFiles/edit_cache.dir
+/mnt/md0/miranda/openwrt/build_dir/target-mips_24kc_musl/libnl-tiny-2023-07-27-bc92a280/CMakeFiles/rebuild_cache.dir
+/mnt/md0/miranda/openwrt/build_dir/target-mips_24kc_musl/libnl-tiny-2023-07-27-bc92a280/CMakeFiles/list_install_components.dir
+/mnt/md0/miranda/openwrt/build_dir/target-mips_24kc_musl/libnl-tiny-2023-07-27-bc92a280/CMakeFiles/install.dir
+/mnt/md0/miranda/openwrt/build_dir/target-mips_24kc_musl/libnl-tiny-2023-07-27-bc92a280/CMakeFiles/install/local.dir
+/mnt/md0/miranda/openwrt/build_dir/target-mips_24kc_musl/libnl-tiny-2023-07-27-bc92a280/CMakeFiles/install/strip.dir

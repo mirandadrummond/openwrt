@@ -1,0 +1,7 @@
+# ninja log v5
+1	66	1729757263958525238	CMakeFiles/cgi-lib.dir/multipart_parser.c.o	6a76d6c8a82a690e
+66	157	1729757264046523982	CMakeFiles/cgi-lib.dir/util.c.o	e7df47ce9d23514b
+157	164	1729757264054523868	libcgi-lib.a	9e95224a416c26b
+164	386	1729757264278520672	CMakeFiles/cgi-io.dir/main.c.o	1560f9b77f9a3cdb
+386	397	1729757264286520558	cgi-io	498f32451a72b11a
+1	4	0	CMakeFiles/install.util	10f503565f05a948

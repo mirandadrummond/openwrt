@@ -1,0 +1,13 @@
+/mnt/md0/miranda/openwrt/build_dir/target-mips_24kc_musl/zlib-1.2.13/CMakeFiles/zlib.dir
+/mnt/md0/miranda/openwrt/build_dir/target-mips_24kc_musl/zlib-1.2.13/CMakeFiles/zlibstatic.dir
+/mnt/md0/miranda/openwrt/build_dir/target-mips_24kc_musl/zlib-1.2.13/CMakeFiles/example.dir
+/mnt/md0/miranda/openwrt/build_dir/target-mips_24kc_musl/zlib-1.2.13/CMakeFiles/minigzip.dir
+/mnt/md0/miranda/openwrt/build_dir/target-mips_24kc_musl/zlib-1.2.13/CMakeFiles/example64.dir
+/mnt/md0/miranda/openwrt/build_dir/target-mips_24kc_musl/zlib-1.2.13/CMakeFiles/minigzip64.dir
+/mnt/md0/miranda/openwrt/build_dir/target-mips_24kc_musl/zlib-1.2.13/CMakeFiles/test.dir
+/mnt/md0/miranda/openwrt/build_dir/target-mips_24kc_musl/zlib-1.2.13/CMakeFiles/edit_cache.dir
+/mnt/md0/miranda/openwrt/build_dir/target-mips_24kc_musl/zlib-1.2.13/CMakeFiles/rebuild_cache.dir
+/mnt/md0/miranda/openwrt/build_dir/target-mips_24kc_musl/zlib-1.2.13/CMakeFiles/list_install_components.dir
+/mnt/md0/miranda/openwrt/build_dir/target-mips_24kc_musl/zlib-1.2.13/CMakeFiles/install.dir
+/mnt/md0/miranda/openwrt/build_dir/target-mips_24kc_musl/zlib-1.2.13/CMakeFiles/install/local.dir
+/mnt/md0/miranda/openwrt/build_dir/target-mips_24kc_musl/zlib-1.2.13/CMakeFiles/install/strip.dir

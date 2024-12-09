@@ -1,0 +1,9 @@
+# ninja log v5
+1	18	1729757110868710867	CMakeFiles/usign.dir/ed25519.c.o	d68a4ebf9027366d
+18	35	1729757110888710582	CMakeFiles/usign.dir/edsign.c.o	8d627eefd84d34f5
+35	56	1729757110908710296	CMakeFiles/usign.dir/f25519.c.o	3aac03f32e0f7200
+56	74	1729757110924710067	CMakeFiles/usign.dir/fprime.c.o	46126a81de0b8041
+74	93	1729757110944709782	CMakeFiles/usign.dir/sha512.c.o	52521d32072b2ce2
+93	130	1729757110980709267	CMakeFiles/usign.dir/main.c.o	ae8d930e1b93eeaa
+130	554	1729757111404703211	usign	131a5643cbdff132
+1	5	0	CMakeFiles/install.util	104e2fc7bfb79393

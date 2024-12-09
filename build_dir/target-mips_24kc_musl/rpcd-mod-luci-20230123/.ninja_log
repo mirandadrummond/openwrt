@@ -1,0 +1,4 @@
+# ninja log v5
+1	656	1729757262606544528	CMakeFiles/rpcd-mod-luci.dir/luci.c.o	8d366419ee7739c4
+656	668	1729757262622544299	luci.so	b3de236e1d048c33
+1	5	0	CMakeFiles/install.util	2f61a05ecc995683

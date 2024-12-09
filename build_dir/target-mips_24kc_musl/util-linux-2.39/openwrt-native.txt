@@ -1,0 +1,15 @@
+[binaries]
+c = ['gcc',]
+cpp = ['g++',]
+pkgconfig = '/mnt/md0/miranda/openwrt/staging_dir/host/bin/pkg-config'
+cmake = '/mnt/md0/miranda/openwrt/staging_dir/host/bin/cmake'
+python = '/mnt/md0/miranda/openwrt/staging_dir/host/bin/python3'
+
+[built-in options]
+c_args = ['-O2', '-I/mnt/md0/miranda/openwrt/staging_dir/host/include', '-I/mnt/md0/miranda/openwrt/staging_dir/hostpkg/include', '-I/mnt/md0/miranda/openwrt/staging_dir/target-mips_24kc_musl/host/include', '-I/mnt/md0/miranda/openwrt/staging_dir/host/include', '-I/mnt/md0/miranda/openwrt/staging_dir/hostpkg/include', '-I/mnt/md0/miranda/openwrt/staging_dir/target-mips_24kc_musl/host/include',]
+c_link_args = ['-L/mnt/md0/miranda/openwrt/staging_dir/host/lib', '-L/mnt/md0/miranda/openwrt/staging_dir/hostpkg/lib', '-L/mnt/md0/miranda/openwrt/staging_dir/target-mips_24kc_musl/host/lib',]
+cpp_args = ['-I/mnt/md0/miranda/openwrt/staging_dir/host/include', '-I/mnt/md0/miranda/openwrt/staging_dir/hostpkg/include', '-I/mnt/md0/miranda/openwrt/staging_dir/target-mips_24kc_musl/host/include',]
+cpp_link_args = ['-L/mnt/md0/miranda/openwrt/staging_dir/host/lib', '-L/mnt/md0/miranda/openwrt/staging_dir/hostpkg/lib', '-L/mnt/md0/miranda/openwrt/staging_dir/target-mips_24kc_musl/host/lib',]
+prefix = ''
+sbindir = 'bin'
+libdir = 'lib'

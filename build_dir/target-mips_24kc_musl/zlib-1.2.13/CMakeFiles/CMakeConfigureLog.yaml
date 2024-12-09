@@ -1,0 +1,359 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/mnt/md0/miranda/openwrt/staging_dir/host/share/cmake-3.26/Modules/CMakeDetermineSystem.cmake:199 (message)"
+      - "CMakeLists.txt:4 (project)"
+    message: |
+      The target system is: Linux - 1 - mips
+      The host system is: Linux - 5.15.0-119-generic - x86_64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/mnt/md0/miranda/openwrt/staging_dir/host/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/mnt/md0/miranda/openwrt/staging_dir/host/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/mnt/md0/miranda/openwrt/staging_dir/host/share/cmake-3.26/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:4 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: /mnt/md0/miranda/openwrt/staging_dir/toolchain-mips_24kc_gcc-12.3.0_musl/bin/mips-openwrt-linux-musl-gcc 
+      Build flags: -Os;-pipe;-mno-branch-likely;-mips32r2;-mtune=24kc;-fno-caller-saves;-fno-plt;-fhonour-copts;-msoft-float;-fmacro-prefix-map=/mnt/md0/miranda/openwrt/build_dir/target-mips_24kc_musl/zlib-1.2.13=zlib-1.2.13;-mips16;-minterlink-mips16;-Wformat;-Werror=format-security;-fstack-protector;-D_FORTIFY_SOURCE=1;-Wl,-z,now;-Wl,-z,relro;-DPIC;-fpic;
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+      
+      The C compiler identification is GNU, found in:
+        /mnt/md0/miranda/openwrt/build_dir/target-mips_24kc_musl/zlib-1.2.13/CMakeFiles/3.26.4/CompilerIdC/a.out
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/mnt/md0/miranda/openwrt/staging_dir/host/share/cmake-3.26/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "/mnt/md0/miranda/openwrt/staging_dir/host/share/cmake-3.26/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:4 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "/mnt/md0/miranda/openwrt/build_dir/target-mips_24kc_musl/zlib-1.2.13/CMakeFiles/CMakeScratch/TryCompile-wh55sC"
+      binary: "/mnt/md0/miranda/openwrt/build_dir/target-mips_24kc_musl/zlib-1.2.13/CMakeFiles/CMakeScratch/TryCompile-wh55sC"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "-Os -pipe -mno-branch-likely -mips32r2 -mtune=24kc -fno-caller-saves -fno-plt -fhonour-copts -msoft-float -fmacro-prefix-map=/mnt/md0/miranda/openwrt/build_dir/target-mips_24kc_musl/zlib-1.2.13=zlib-1.2.13 -mips16 -minterlink-mips16 -Wformat -fstack-protector -D_FORTIFY_SOURCE=1 -Wl,-z,now -Wl,-z,relro -DPIC -fpic"
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: /mnt/md0/miranda/openwrt/build_dir/target-mips_24kc_musl/zlib-1.2.13/CMakeFiles/CMakeScratch/TryCompile-wh55sC
+        
+        Run Build Command(s):/mnt/md0/miranda/openwrt/staging_dir/host/bin/ninja -v cmTC_921cc && [1/2] /mnt/md0/miranda/openwrt/staging_dir/toolchain-mips_24kc_gcc-12.3.0_musl/bin/mips-openwrt-linux-musl-gcc   -Os -pipe -mno-branch-likely -mips32r2 -mtune=24kc -fno-caller-saves -fno-plt -fhonour-copts -msoft-float -fmacro-prefix-map=/mnt/md0/miranda/openwrt/build_dir/target-mips_24kc_musl/zlib-1.2.13=zlib-1.2.13 -mips16 -minterlink-mips16 -Wformat -fstack-protector -D_FORTIFY_SOURCE=1 -Wl,-z,now -Wl,-z,relro -DPIC -fpic    -v -o CMakeFiles/cmTC_921cc.dir/CMakeCCompilerABI.c.o -c /mnt/md0/miranda/openwrt/staging_dir/host/share/cmake-3.26/Modules/CMakeCCompilerABI.c
+        Reading specs from /mnt/md0/miranda/openwrt/staging_dir/toolchain-mips_24kc_gcc-12.3.0_musl/lib/gcc/mips-openwrt-linux-musl/12.3.0/specs
+        COLLECT_GCC=/mnt/md0/miranda/openwrt/staging_dir/toolchain-mips_24kc_gcc-12.3.0_musl/bin/mips-openwrt-linux-musl-gcc
+        Target: mips-openwrt-linux-musl
+        Configured with: /mnt/md0/miranda/openwrt/build_dir/toolchain-mips_24kc_gcc-12.3.0_musl/gcc-12.3.0/configure --with-bugurl=http://bugs.openwrt.org/ --with-pkgversion='OpenWrt GCC 12.3.0 r23497-6637af95aa' --prefix=/mnt/md0/miranda/openwrt/staging_dir/toolchain-mips_24kc_gcc-12.3.0_musl --build=x86_64-pc-linux-gnu --host=x86_64-pc-linux-gnu --target=mips-openwrt-linux-musl --with-gnu-ld --enable-target-optspace --disable-libgomp --disable-libmudflap --disable-multilib --disable-libmpx --disable-nls --disable-libssp --without-isl --without-cloog --with-host-libstdcxx=-lstdc++ --with-float=soft --with-system-zlib=/mnt/md0/miranda/openwrt/staging_dir/host --with-zstd=/mnt/md0/miranda/openwrt/staging_dir/host --with-gmp=/mnt/md0/miranda/openwrt/staging_dir/host --with-mpfr=/mnt/md0/miranda/openwrt/staging_dir/host --with-mpc=/mnt/md0/miranda/openwrt/staging_dir/host --disable-decimal-float --with-diagnostics-color=auto-if-env --enable-__cxa_atexit --enable-libstdcxx-dual-abi --with-default-libstdcxx-abi=new --with-mips-plt CFLAGS='-O2 -I/mnt/md0/miranda/openwrt/staging_dir/host/include  -pipe' CXXFLAGS='-O2 -I/mnt/md0/miranda/openwrt/staging_dir/host/include  -pipe' 'CFLAGS_FOR_TARGET=-Os -pipe -mno-branch-likely -mips32r2 -mtune=24kc -fno-caller-saves -fno-plt -fhonour-copts -msoft-float -Wformat -Werror=format-security -fstack-protector -D_FORTIFY_SOURCE=1 -Wl,-z,now -Wl,-z,relro' 'CXXFLAGS_FOR_TARGET=-Os -pipe -mno-branch-likely -mips32r2 -mtune=24kc -fno-caller-saves -fno-plt -fhonour-copts -msoft-float -Wformat -Werror=format-security -fstack-protector -D_FORTIFY_SOURCE=1 -Wl,-z,now -Wl,-z,relro' 'GOCFLAGS_FOR_TARGET=-Os -pipe -mno-branch-likely -mips32r2 -mtune=24kc -fno-caller-saves -fno-plt -fhonour-copts -msoft-float -Wformat -Werror=format-security -fstack-protector -D_FORTIFY_SOURCE=1 -Wl,-z,now -Wl,-z,relro' --with-headers=/mnt/md0/miranda/openwrt/staging_dir/toolchain-mips_24kc_gcc-12.3.0_musl/include --enable-languages=c,c++ --enable-shared --enable-threads --with-slibdir=/mnt/md0/miranda/openwrt/staging_dir/toolchain-mips_24kc_gcc-12.3.0_musl/lib --enable-plugins --enable-lto --with-libelf=/mnt/md0/miranda/openwrt/staging_dir/host --disable-libsanitizer
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 12.3.0 (OpenWrt GCC 12.3.0 r23497-6637af95aa) 
+        COLLECT_GCC_OPTIONS='-Os' '-pipe' '-mno-branch-likely' '-mips32r2' '-mtune=24kc' '-fno-caller-saves' '-fno-plt' '-fhonour-copts' '-msoft-float' '-fmacro-prefix-map=/mnt/md0/miranda/openwrt/build_dir/target-mips_24kc_musl/zlib-1.2.13=zlib-1.2.13' '-mips16' '-minterlink-mips16' '-Wformat=1' '-fstack-protector' '-D' '_FORTIFY_SOURCE=1' '-D' 'PIC' '-fpic' '-v' '-o' 'CMakeFiles/cmTC_921cc.dir/CMakeCCompilerABI.c.o' '-c' '-mllsc'  '-EB' '-mabi=32' '-dumpdir' 'CMakeFiles/cmTC_921cc.dir/'
+         /mnt/md0/miranda/openwrt/staging_dir/toolchain-mips_24kc_gcc-12.3.0_musl/libexec/gcc/mips-openwrt-linux-musl/12.3.0/cc1 -quiet -v -idirafter /mnt/md0/miranda/openwrt/staging_dir/target-mips_24kc_musl/usr/include -D _FORTIFY_SOURCE=1 -D PIC /mnt/md0/miranda/openwrt/staging_dir/host/share/cmake-3.26/Modules/CMakeCCompilerABI.c -meb -quiet -dumpdir CMakeFiles/cmTC_921cc.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mno-branch-likely -mips32r2 -mtune=24kc -msoft-float -mips16 -minterlink-mips16 -mllsc -mabi=32 -Os -Wformat=1 -version -fno-caller-saves -fno-plt -fhonour-copts -fmacro-prefix-map=/mnt/md0/miranda/openwrt/build_dir/target-mips_24kc_musl/zlib-1.2.13=zlib-1.2.13 -fstack-protector -fpic -o - |
+         /mnt/md0/miranda/openwrt/staging_dir/toolchain-mips_24kc_gcc-12.3.0_musl/lib/gcc/mips-openwrt-linux-musl/12.3.0/../../../../mips-openwrt-linux-musl/bin/as -v -EB -mips32r2 -mips16 -O2 -mabi=32 -mtune=24kc -msoft-float -KPIC -o CMakeFiles/cmTC_921cc.dir/CMakeCCompilerABI.c.o
+        GNU assembler version 2.40.0 (mips-openwrt-linux-musl) using BFD version (GNU Binutils) 2.40.0
+        GNU C17 (OpenWrt GCC 12.3.0 r23497-6637af95aa) version 12.3.0 (mips-openwrt-linux-musl)
+        	compiled by GNU C version 11.4.0, GMP version 6.2.1, MPFR version 4.2.0, MPC version 1.3.1, isl version none
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /mnt/md0/miranda/openwrt/staging_dir/toolchain-mips_24kc_gcc-12.3.0_musl/lib/gcc/mips-openwrt-linux-musl/12.3.0/../../../../mips-openwrt-linux-musl/sys-include
+         /mnt/md0/miranda/openwrt/staging_dir/toolchain-mips_24kc_gcc-12.3.0_musl/lib/gcc/mips-openwrt-linux-musl/12.3.0/../../../../mips-openwrt-linux-musl/include
+         /mnt/md0/miranda/openwrt/staging_dir/toolchain-mips_24kc_gcc-12.3.0_musl/lib/gcc/mips-openwrt-linux-musl/12.3.0/include
+         /mnt/md0/miranda/openwrt/staging_dir/target-mips_24kc_musl/usr/include
+        End of search list.
+        GNU C17 (OpenWrt GCC 12.3.0 r23497-6637af95aa) version 12.3.0 (mips-openwrt-linux-musl)
+        	compiled by GNU C version 11.4.0, GMP version 6.2.1, MPFR version 4.2.0, MPC version 1.3.1, isl version none
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        Compiler executable checksum: 3fdb32f5802914568e4dbc2083e3f55e
+        COMPILER_PATH=/mnt/md0/miranda/openwrt/staging_dir/toolchain-mips_24kc_gcc-12.3.0_musl/libexec/gcc/mips-openwrt-linux-musl/12.3.0/:/mnt/md0/miranda/openwrt/staging_dir/toolchain-mips_24kc_gcc-12.3.0_musl/libexec/gcc/mips-openwrt-linux-musl/12.3.0/:/mnt/md0/miranda/openwrt/staging_dir/toolchain-mips_24kc_gcc-12.3.0_musl/libexec/gcc/mips-openwrt-linux-musl/:/mnt/md0/miranda/openwrt/staging_dir/toolchain-mips_24kc_gcc-12.3.0_musl/lib/gcc/mips-openwrt-linux-musl/12.3.0/:/mnt/md0/miranda/openwrt/staging_dir/toolchain-mips_24kc_gcc-12.3.0_musl/lib/gcc/mips-openwrt-linux-musl/:/mnt/md0/miranda/openwrt/staging_dir/toolchain-mips_24kc_gcc-12.3.0_musl/lib/gcc/mips-openwrt-linux-musl/12.3.0/../../../../mips-openwrt-linux-musl/bin/
+        LIBRARY_PATH=/mnt/md0/miranda/openwrt/staging_dir/toolchain-mips_24kc_gcc-12.3.0_musl/lib/gcc/mips-openwrt-linux-musl/12.3.0/:/mnt/md0/miranda/openwrt/staging_dir/toolchain-mips_24kc_gcc-12.3.0_musl/lib/gcc/mips-openwrt-linux-musl/12.3.0/../../../../mips-openwrt-linux-musl/lib/
+        COLLECT_GCC_OPTIONS='-Os' '-pipe' '-mno-branch-likely' '-mips32r2' '-mtune=24kc' '-fno-caller-saves' '-fno-plt' '-fhonour-copts' '-msoft-float' '-fmacro-prefix-map=/mnt/md0/miranda/openwrt/build_dir/target-mips_24kc_musl/zlib-1.2.13=zlib-1.2.13' '-mips16' '-minterlink-mips16' '-Wformat=1' '-fstack-protector' '-D' '_FORTIFY_SOURCE=1' '-D' 'PIC' '-fpic' '-v' '-o' 'CMakeFiles/cmTC_921cc.dir/CMakeCCompilerABI.c.o' '-c' '-mllsc'  '-EB' '-mabi=32' '-dumpdir' 'CMakeFiles/cmTC_921cc.dir/CMakeCCompilerABI.c.'
+        [2/2] : && /mnt/md0/miranda/openwrt/staging_dir/toolchain-mips_24kc_gcc-12.3.0_musl/bin/mips-openwrt-linux-musl-gcc -Os -pipe -mno-branch-likely -mips32r2 -mtune=24kc -fno-caller-saves -fno-plt -fhonour-copts -msoft-float -fmacro-prefix-map=/mnt/md0/miranda/openwrt/build_dir/target-mips_24kc_musl/zlib-1.2.13=zlib-1.2.13 -mips16 -minterlink-mips16 -Wformat -fstack-protector -D_FORTIFY_SOURCE=1 -Wl,-z,now -Wl,-z,relro -DPIC -fpic -L/mnt/md0/miranda/openwrt/staging_dir/toolchain-mips_24kc_gcc-12.3.0_musl/usr/lib -L/mnt/md0/miranda/openwrt/staging_dir/toolchain-mips_24kc_gcc-12.3.0_musl/lib -znow -zrelro -v  -rdynamic CMakeFiles/cmTC_921cc.dir/CMakeCCompilerABI.c.o -o cmTC_921cc   && :
+        Reading specs from /mnt/md0/miranda/openwrt/staging_dir/toolchain-mips_24kc_gcc-12.3.0_musl/lib/gcc/mips-openwrt-linux-musl/12.3.0/specs
+        COLLECT_GCC=/mnt/md0/miranda/openwrt/staging_dir/toolchain-mips_24kc_gcc-12.3.0_musl/bin/mips-openwrt-linux-musl-gcc
+        COLLECT_LTO_WRAPPER=/mnt/md0/miranda/openwrt/staging_dir/toolchain-mips_24kc_gcc-12.3.0_musl/libexec/gcc/mips-openwrt-linux-musl/12.3.0/lto-wrapper
+        Target: mips-openwrt-linux-musl
+        Configured with: /mnt/md0/miranda/openwrt/build_dir/toolchain-mips_24kc_gcc-12.3.0_musl/gcc-12.3.0/configure --with-bugurl=http://bugs.openwrt.org/ --with-pkgversion='OpenWrt GCC 12.3.0 r23497-6637af95aa' --prefix=/mnt/md0/miranda/openwrt/staging_dir/toolchain-mips_24kc_gcc-12.3.0_musl --build=x86_64-pc-linux-gnu --host=x86_64-pc-linux-gnu --target=mips-openwrt-linux-musl --with-gnu-ld --enable-target-optspace --disable-libgomp --disable-libmudflap --disable-multilib --disable-libmpx --disable-nls --disable-libssp --without-isl --without-cloog --with-host-libstdcxx=-lstdc++ --with-float=soft --with-system-zlib=/mnt/md0/miranda/openwrt/staging_dir/host --with-zstd=/mnt/md0/miranda/openwrt/staging_dir/host --with-gmp=/mnt/md0/miranda/openwrt/staging_dir/host --with-mpfr=/mnt/md0/miranda/openwrt/staging_dir/host --with-mpc=/mnt/md0/miranda/openwrt/staging_dir/host --disable-decimal-float --with-diagnostics-color=auto-if-env --enable-__cxa_atexit --enable-libstdcxx-dual-abi --with-default-libstdcxx-abi=new --with-mips-plt CFLAGS='-O2 -I/mnt/md0/miranda/openwrt/staging_dir/host/include  -pipe' CXXFLAGS='-O2 -I/mnt/md0/miranda/openwrt/staging_dir/host/include  -pipe' 'CFLAGS_FOR_TARGET=-Os -pipe -mno-branch-likely -mips32r2 -mtune=24kc -fno-caller-saves -fno-plt -fhonour-copts -msoft-float -Wformat -Werror=format-security -fstack-protector -D_FORTIFY_SOURCE=1 -Wl,-z,now -Wl,-z,relro' 'CXXFLAGS_FOR_TARGET=-Os -pipe -mno-branch-likely -mips32r2 -mtune=24kc -fno-caller-saves -fno-plt -fhonour-copts -msoft-float -Wformat -Werror=format-security -fstack-protector -D_FORTIFY_SOURCE=1 -Wl,-z,now -Wl,-z,relro' 'GOCFLAGS_FOR_TARGET=-Os -pipe -mno-branch-likely -mips32r2 -mtune=24kc -fno-caller-saves -fno-plt -fhonour-copts -msoft-float -Wformat -Werror=format-security -fstack-protector -D_FORTIFY_SOURCE=1 -Wl,-z,now -Wl,-z,relro' --with-headers=/mnt/md0/miranda/openwrt/staging_dir/toolchain-mips_24kc_gcc-12.3.0_musl/include --enable-languages=c,c++ --enable-shared --enable-threads --with-slibdir=/mnt/md0/miranda/openwrt/staging_dir/toolchain-mips_24kc_gcc-12.3.0_musl/lib --enable-plugins --enable-lto --with-libelf=/mnt/md0/miranda/openwrt/staging_dir/host --disable-libsanitizer
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 12.3.0 (OpenWrt GCC 12.3.0 r23497-6637af95aa) 
+        COMPILER_PATH=/mnt/md0/miranda/openwrt/staging_dir/toolchain-mips_24kc_gcc-12.3.0_musl/libexec/gcc/mips-openwrt-linux-musl/12.3.0/:/mnt/md0/miranda/openwrt/staging_dir/toolchain-mips_24kc_gcc-12.3.0_musl/libexec/gcc/mips-openwrt-linux-musl/12.3.0/:/mnt/md0/miranda/openwrt/staging_dir/toolchain-mips_24kc_gcc-12.3.0_musl/libexec/gcc/mips-openwrt-linux-musl/:/mnt/md0/miranda/openwrt/staging_dir/toolchain-mips_24kc_gcc-12.3.0_musl/lib/gcc/mips-openwrt-linux-musl/12.3.0/:/mnt/md0/miranda/openwrt/staging_dir/toolchain-mips_24kc_gcc-12.3.0_musl/lib/gcc/mips-openwrt-linux-musl/:/mnt/md0/miranda/openwrt/staging_dir/toolchain-mips_24kc_gcc-12.3.0_musl/lib/gcc/mips-openwrt-linux-musl/12.3.0/../../../../mips-openwrt-linux-musl/bin/
+        LIBRARY_PATH=/mnt/md0/miranda/openwrt/staging_dir/toolchain-mips_24kc_gcc-12.3.0_musl/lib/gcc/mips-openwrt-linux-musl/12.3.0/:/mnt/md0/miranda/openwrt/staging_dir/toolchain-mips_24kc_gcc-12.3.0_musl/lib/gcc/mips-openwrt-linux-musl/12.3.0/../../../../mips-openwrt-linux-musl/lib/
+        COLLECT_GCC_OPTIONS='-Os' '-pipe' '-mno-branch-likely' '-mips32r2' '-mtune=24kc' '-fno-caller-saves' '-fno-plt' '-fhonour-copts' '-msoft-float' '-fmacro-prefix-map=/mnt/md0/miranda/openwrt/build_dir/target-mips_24kc_musl/zlib-1.2.13=zlib-1.2.13' '-mips16' '-minterlink-mips16' '-Wformat=1' '-fstack-protector' '-D' '_FORTIFY_SOURCE=1' '-D' 'PIC' '-fpic' '-L/mnt/md0/miranda/openwrt/staging_dir/toolchain-mips_24kc_gcc-12.3.0_musl/usr/lib' '-L/mnt/md0/miranda/openwrt/staging_dir/toolchain-mips_24kc_gcc-12.3.0_musl/lib' '-z' 'now' '-z' 'relro' '-v' '-rdynamic' '-o' 'cmTC_921cc' '-mllsc'  '-EB' '-mabi=32' '-dumpdir' 'cmTC_921cc.'
+         /mnt/md0/miranda/openwrt/staging_dir/toolchain-mips_24kc_gcc-12.3.0_musl/libexec/gcc/mips-openwrt-linux-musl/12.3.0/collect2 -plugin /mnt/md0/miranda/openwrt/staging_dir/toolchain-mips_24kc_gcc-12.3.0_musl/libexec/gcc/mips-openwrt-linux-musl/12.3.0/liblto_plugin.so -plugin-opt=/mnt/md0/miranda/openwrt/staging_dir/toolchain-mips_24kc_gcc-12.3.0_musl/libexec/gcc/mips-openwrt-linux-musl/12.3.0/lto-wrapper -plugin-opt=-fresolution=/mnt/md0/miranda/openwrt/tmp/ccuc51kr.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s --eh-frame-hdr -EB -mips32r2 -mips16 -export-dynamic -dynamic-linker /lib/ld-musl-mips-sf.so.1 -melf32btsmip -o cmTC_921cc -z now -z relro /mnt/md0/miranda/openwrt/staging_dir/toolchain-mips_24kc_gcc-12.3.0_musl/lib/gcc/mips-openwrt-linux-musl/12.3.0/../../../../mips-openwrt-linux-musl/lib/crt1.o /mnt/md0/miranda/openwrt/staging_dir/toolchain-mips_24kc_gcc-12.3.0_musl/lib/gcc/mips-openwrt-linux-musl/12.3.0/../../../../mips-openwrt-linux-musl/lib/crti.o /mnt/md0/miranda/openwrt/staging_dir/toolchain-mips_24kc_gcc-12.3.0_musl/lib/gcc/mips-openwrt-linux-musl/12.3.0/crtbegin.o -L/mnt/md0/miranda/openwrt/staging_dir/toolchain-mips_24kc_gcc-12.3.0_musl/usr/lib -L/mnt/md0/miranda/openwrt/staging_dir/toolchain-mips_24kc_gcc-12.3.0_musl/lib -L /mnt/md0/miranda/openwrt/staging_dir/target-mips_24kc_musl/usr/lib -rpath-link /mnt/md0/miranda/openwrt/staging_dir/target-mips_24kc_musl/usr/lib -L/mnt/md0/miranda/openwrt/staging_dir/toolchain-mips_24kc_gcc-12.3.0_musl/lib/gcc/mips-openwrt-linux-musl/12.3.0 -L/mnt/md0/miranda/openwrt/staging_dir/toolchain-mips_24kc_gcc-12.3.0_musl/lib/gcc/mips-openwrt-linux-musl/12.3.0/../../../../mips-openwrt-linux-musl/lib -z now -z relro CMakeFiles/cmTC_921cc.dir/CMakeCCompilerABI.c.o -lssp_nonshared -lgcc_s -lc -lgcc_s /mnt/md0/miranda/openwrt/staging_dir/toolchain-mips_24kc_gcc-12.3.0_musl/lib/gcc/mips-openwrt-linux-musl/12.3.0/crtend.o /mnt/md0/miranda/openwrt/staging_dir/toolchain-mips_24kc_gcc-12.3.0_musl/lib/gcc/mips-openwrt-linux-musl/12.3.0/../../../../mips-openwrt-linux-musl/lib/crtn.o
+        COLLECT_GCC_OPTIONS='-Os' '-pipe' '-mno-branch-likely' '-mips32r2' '-mtune=24kc' '-fno-caller-saves' '-fno-plt' '-fhonour-copts' '-msoft-float' '-fmacro-prefix-map=/mnt/md0/miranda/openwrt/build_dir/target-mips_24kc_musl/zlib-1.2.13=zlib-1.2.13' '-mips16' '-minterlink-mips16' '-Wformat=1' '-fstack-protector' '-D' '_FORTIFY_SOURCE=1' '-D' 'PIC' '-fpic' '-L/mnt/md0/miranda/openwrt/staging_dir/toolchain-mips_24kc_gcc-12.3.0_musl/usr/lib' '-L/mnt/md0/miranda/openwrt/staging_dir/toolchain-mips_24kc_gcc-12.3.0_musl/lib' '-z' 'now' '-z' 'relro' '-v' '-rdynamic' '-o' 'cmTC_921cc' '-mllsc'  '-EB' '-mabi=32' '-dumpdir' 'cmTC_921cc.'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/mnt/md0/miranda/openwrt/staging_dir/host/share/cmake-3.26/Modules/CMakeDetermineCompilerABI.cmake:127 (message)"
+      - "/mnt/md0/miranda/openwrt/staging_dir/host/share/cmake-3.26/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:4 (project)"
+    message: |
+      Parsed C implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/mnt/md0/miranda/openwrt/staging_dir/toolchain-mips_24kc_gcc-12.3.0_musl/lib/gcc/mips-openwrt-linux-musl/12.3.0/../../../../mips-openwrt-linux-musl/sys-include]
+          add: [/mnt/md0/miranda/openwrt/staging_dir/toolchain-mips_24kc_gcc-12.3.0_musl/lib/gcc/mips-openwrt-linux-musl/12.3.0/../../../../mips-openwrt-linux-musl/include]
+          add: [/mnt/md0/miranda/openwrt/staging_dir/toolchain-mips_24kc_gcc-12.3.0_musl/lib/gcc/mips-openwrt-linux-musl/12.3.0/include]
+          add: [/mnt/md0/miranda/openwrt/staging_dir/target-mips_24kc_musl/usr/include]
+        end of search list found
+        collapse include dir [/mnt/md0/miranda/openwrt/staging_dir/toolchain-mips_24kc_gcc-12.3.0_musl/lib/gcc/mips-openwrt-linux-musl/12.3.0/../../../../mips-openwrt-linux-musl/sys-include] ==> [/mnt/md0/miranda/openwrt/staging_dir/toolchain-mips_24kc_gcc-12.3.0_musl/mips-openwrt-linux-musl/sys-include]
+        collapse include dir [/mnt/md0/miranda/openwrt/staging_dir/toolchain-mips_24kc_gcc-12.3.0_musl/lib/gcc/mips-openwrt-linux-musl/12.3.0/../../../../mips-openwrt-linux-musl/include] ==> [/mnt/md0/miranda/openwrt/staging_dir/toolchain-mips_24kc_gcc-12.3.0_musl/mips-openwrt-linux-musl/include]
+        collapse include dir [/mnt/md0/miranda/openwrt/staging_dir/toolchain-mips_24kc_gcc-12.3.0_musl/lib/gcc/mips-openwrt-linux-musl/12.3.0/include] ==> [/mnt/md0/miranda/openwrt/staging_dir/toolchain-mips_24kc_gcc-12.3.0_musl/lib/gcc/mips-openwrt-linux-musl/12.3.0/include]
+        collapse include dir [/mnt/md0/miranda/openwrt/staging_dir/target-mips_24kc_musl/usr/include] ==> [/mnt/md0/miranda/openwrt/staging_dir/target-mips_24kc_musl/usr/include]
+        implicit include dirs: [/mnt/md0/miranda/openwrt/staging_dir/toolchain-mips_24kc_gcc-12.3.0_musl/mips-openwrt-linux-musl/sys-include;/mnt/md0/miranda/openwrt/staging_dir/toolchain-mips_24kc_gcc-12.3.0_musl/mips-openwrt-linux-musl/include;/mnt/md0/miranda/openwrt/staging_dir/toolchain-mips_24kc_gcc-12.3.0_musl/lib/gcc/mips-openwrt-linux-musl/12.3.0/include;/mnt/md0/miranda/openwrt/staging_dir/target-mips_24kc_musl/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/mnt/md0/miranda/openwrt/staging_dir/host/share/cmake-3.26/Modules/CMakeDetermineCompilerABI.cmake:152 (message)"
+      - "/mnt/md0/miranda/openwrt/staging_dir/host/share/cmake-3.26/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:4 (project)"
+    message: |
+      Parsed C implicit link information:
+        link line regex: [^( *|.*[/\\])(mips-openwrt-linux-musl-ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        ignore line: [Change Dir: /mnt/md0/miranda/openwrt/build_dir/target-mips_24kc_musl/zlib-1.2.13/CMakeFiles/CMakeScratch/TryCompile-wh55sC]
+        ignore line: []
+        ignore line: [Run Build Command(s):/mnt/md0/miranda/openwrt/staging_dir/host/bin/ninja -v cmTC_921cc && [1/2] /mnt/md0/miranda/openwrt/staging_dir/toolchain-mips_24kc_gcc-12.3.0_musl/bin/mips-openwrt-linux-musl-gcc   -Os -pipe -mno-branch-likely -mips32r2 -mtune=24kc -fno-caller-saves -fno-plt -fhonour-copts -msoft-float -fmacro-prefix-map=/mnt/md0/miranda/openwrt/build_dir/target-mips_24kc_musl/zlib-1.2.13=zlib-1.2.13 -mips16 -minterlink-mips16 -Wformat -fstack-protector -D_FORTIFY_SOURCE=1 -Wl -z now -Wl -z relro -DPIC -fpic    -v -o CMakeFiles/cmTC_921cc.dir/CMakeCCompilerABI.c.o -c /mnt/md0/miranda/openwrt/staging_dir/host/share/cmake-3.26/Modules/CMakeCCompilerABI.c]
+        ignore line: [Reading specs from /mnt/md0/miranda/openwrt/staging_dir/toolchain-mips_24kc_gcc-12.3.0_musl/lib/gcc/mips-openwrt-linux-musl/12.3.0/specs]
+        ignore line: [COLLECT_GCC=/mnt/md0/miranda/openwrt/staging_dir/toolchain-mips_24kc_gcc-12.3.0_musl/bin/mips-openwrt-linux-musl-gcc]
+        ignore line: [Target: mips-openwrt-linux-musl]
+        ignore line: [Configured with: /mnt/md0/miranda/openwrt/build_dir/toolchain-mips_24kc_gcc-12.3.0_musl/gcc-12.3.0/configure --with-bugurl=http://bugs.openwrt.org/ --with-pkgversion='OpenWrt GCC 12.3.0 r23497-6637af95aa' --prefix=/mnt/md0/miranda/openwrt/staging_dir/toolchain-mips_24kc_gcc-12.3.0_musl --build=x86_64-pc-linux-gnu --host=x86_64-pc-linux-gnu --target=mips-openwrt-linux-musl --with-gnu-ld --enable-target-optspace --disable-libgomp --disable-libmudflap --disable-multilib --disable-libmpx --disable-nls --disable-libssp --without-isl --without-cloog --with-host-libstdcxx=-lstdc++ --with-float=soft --with-system-zlib=/mnt/md0/miranda/openwrt/staging_dir/host --with-zstd=/mnt/md0/miranda/openwrt/staging_dir/host --with-gmp=/mnt/md0/miranda/openwrt/staging_dir/host --with-mpfr=/mnt/md0/miranda/openwrt/staging_dir/host --with-mpc=/mnt/md0/miranda/openwrt/staging_dir/host --disable-decimal-float --with-diagnostics-color=auto-if-env --enable-__cxa_atexit --enable-libstdcxx-dual-abi --with-default-libstdcxx-abi=new --with-mips-plt CFLAGS='-O2 -I/mnt/md0/miranda/openwrt/staging_dir/host/include  -pipe' CXXFLAGS='-O2 -I/mnt/md0/miranda/openwrt/staging_dir/host/include  -pipe' 'CFLAGS_FOR_TARGET=-Os -pipe -mno-branch-likely -mips32r2 -mtune=24kc -fno-caller-saves -fno-plt -fhonour-copts -msoft-float -Wformat -Werror=format-security -fstack-protector -D_FORTIFY_SOURCE=1 -Wl,-z,now -Wl,-z,relro' 'CXXFLAGS_FOR_TARGET=-Os -pipe -mno-branch-likely -mips32r2 -mtune=24kc -fno-caller-saves -fno-plt -fhonour-copts -msoft-float -Wformat -Werror=format-security -fstack-protector -D_FORTIFY_SOURCE=1 -Wl,-z,now -Wl,-z,relro' 'GOCFLAGS_FOR_TARGET=-Os -pipe -mno-branch-likely -mips32r2 -mtune=24kc -fno-caller-saves -fno-plt -fhonour-copts -msoft-float -Wformat -Werror=format-security -fstack-protector -D_FORTIFY_SOURCE=1 -Wl,-z,now -Wl,-z,relro' --with-headers=/mnt/md0/miranda/openwrt/staging_dir/toolchain-mips_24kc_gcc-12.3.0_musl/include --enable-languages=c,c++ --enable-shared --enable-threads --with-slibdir=/mnt/md0/miranda/openwrt/staging_dir/toolchain-mips_24kc_gcc-12.3.0_musl/lib --enable-plugins --enable-lto --with-libelf=/mnt/md0/miranda/openwrt/staging_dir/host --disable-libsanitizer]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 12.3.0 (OpenWrt GCC 12.3.0 r23497-6637af95aa) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-Os' '-pipe' '-mno-branch-likely' '-mips32r2' '-mtune=24kc' '-fno-caller-saves' '-fno-plt' '-fhonour-copts' '-msoft-float' '-fmacro-prefix-map=/mnt/md0/miranda/openwrt/build_dir/target-mips_24kc_musl/zlib-1.2.13=zlib-1.2.13' '-mips16' '-minterlink-mips16' '-Wformat=1' '-fstack-protector' '-D' '_FORTIFY_SOURCE=1' '-D' 'PIC' '-fpic' '-v' '-o' 'CMakeFiles/cmTC_921cc.dir/CMakeCCompilerABI.c.o' '-c' '-mllsc'  '-EB' '-mabi=32' '-dumpdir' 'CMakeFiles/cmTC_921cc.dir/']
+        ignore line: [ /mnt/md0/miranda/openwrt/staging_dir/toolchain-mips_24kc_gcc-12.3.0_musl/libexec/gcc/mips-openwrt-linux-musl/12.3.0/cc1 -quiet -v -idirafter /mnt/md0/miranda/openwrt/staging_dir/target-mips_24kc_musl/usr/include -D _FORTIFY_SOURCE=1 -D PIC /mnt/md0/miranda/openwrt/staging_dir/host/share/cmake-3.26/Modules/CMakeCCompilerABI.c -meb -quiet -dumpdir CMakeFiles/cmTC_921cc.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mno-branch-likely -mips32r2 -mtune=24kc -msoft-float -mips16 -minterlink-mips16 -mllsc -mabi=32 -Os -Wformat=1 -version -fno-caller-saves -fno-plt -fhonour-copts -fmacro-prefix-map=/mnt/md0/miranda/openwrt/build_dir/target-mips_24kc_musl/zlib-1.2.13=zlib-1.2.13 -fstack-protector -fpic -o - |]
+        ignore line: [ /mnt/md0/miranda/openwrt/staging_dir/toolchain-mips_24kc_gcc-12.3.0_musl/lib/gcc/mips-openwrt-linux-musl/12.3.0/../../../../mips-openwrt-linux-musl/bin/as -v -EB -mips32r2 -mips16 -O2 -mabi=32 -mtune=24kc -msoft-float -KPIC -o CMakeFiles/cmTC_921cc.dir/CMakeCCompilerABI.c.o]
+        ignore line: [GNU assembler version 2.40.0 (mips-openwrt-linux-musl) using BFD version (GNU Binutils) 2.40.0]
+        ignore line: [GNU C17 (OpenWrt GCC 12.3.0 r23497-6637af95aa) version 12.3.0 (mips-openwrt-linux-musl)]
+        ignore line: [	compiled by GNU C version 11.4.0  GMP version 6.2.1  MPFR version 4.2.0  MPC version 1.3.1  isl version none]
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /mnt/md0/miranda/openwrt/staging_dir/toolchain-mips_24kc_gcc-12.3.0_musl/lib/gcc/mips-openwrt-linux-musl/12.3.0/../../../../mips-openwrt-linux-musl/sys-include]
+        ignore line: [ /mnt/md0/miranda/openwrt/staging_dir/toolchain-mips_24kc_gcc-12.3.0_musl/lib/gcc/mips-openwrt-linux-musl/12.3.0/../../../../mips-openwrt-linux-musl/include]
+        ignore line: [ /mnt/md0/miranda/openwrt/staging_dir/toolchain-mips_24kc_gcc-12.3.0_musl/lib/gcc/mips-openwrt-linux-musl/12.3.0/include]
+        ignore line: [ /mnt/md0/miranda/openwrt/staging_dir/target-mips_24kc_musl/usr/include]
+        ignore line: [End of search list.]
+        ignore line: [GNU C17 (OpenWrt GCC 12.3.0 r23497-6637af95aa) version 12.3.0 (mips-openwrt-linux-musl)]
+        ignore line: [	compiled by GNU C version 11.4.0  GMP version 6.2.1  MPFR version 4.2.0  MPC version 1.3.1  isl version none]
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [Compiler executable checksum: 3fdb32f5802914568e4dbc2083e3f55e]
+        ignore line: [COMPILER_PATH=/mnt/md0/miranda/openwrt/staging_dir/toolchain-mips_24kc_gcc-12.3.0_musl/libexec/gcc/mips-openwrt-linux-musl/12.3.0/:/mnt/md0/miranda/openwrt/staging_dir/toolchain-mips_24kc_gcc-12.3.0_musl/libexec/gcc/mips-openwrt-linux-musl/12.3.0/:/mnt/md0/miranda/openwrt/staging_dir/toolchain-mips_24kc_gcc-12.3.0_musl/libexec/gcc/mips-openwrt-linux-musl/:/mnt/md0/miranda/openwrt/staging_dir/toolchain-mips_24kc_gcc-12.3.0_musl/lib/gcc/mips-openwrt-linux-musl/12.3.0/:/mnt/md0/miranda/openwrt/staging_dir/toolchain-mips_24kc_gcc-12.3.0_musl/lib/gcc/mips-openwrt-linux-musl/:/mnt/md0/miranda/openwrt/staging_dir/toolchain-mips_24kc_gcc-12.3.0_musl/lib/gcc/mips-openwrt-linux-musl/12.3.0/../../../../mips-openwrt-linux-musl/bin/]
+        ignore line: [LIBRARY_PATH=/mnt/md0/miranda/openwrt/staging_dir/toolchain-mips_24kc_gcc-12.3.0_musl/lib/gcc/mips-openwrt-linux-musl/12.3.0/:/mnt/md0/miranda/openwrt/staging_dir/toolchain-mips_24kc_gcc-12.3.0_musl/lib/gcc/mips-openwrt-linux-musl/12.3.0/../../../../mips-openwrt-linux-musl/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-Os' '-pipe' '-mno-branch-likely' '-mips32r2' '-mtune=24kc' '-fno-caller-saves' '-fno-plt' '-fhonour-copts' '-msoft-float' '-fmacro-prefix-map=/mnt/md0/miranda/openwrt/build_dir/target-mips_24kc_musl/zlib-1.2.13=zlib-1.2.13' '-mips16' '-minterlink-mips16' '-Wformat=1' '-fstack-protector' '-D' '_FORTIFY_SOURCE=1' '-D' 'PIC' '-fpic' '-v' '-o' 'CMakeFiles/cmTC_921cc.dir/CMakeCCompilerABI.c.o' '-c' '-mllsc'  '-EB' '-mabi=32' '-dumpdir' 'CMakeFiles/cmTC_921cc.dir/CMakeCCompilerABI.c.']
+        ignore line: [[2/2] : && /mnt/md0/miranda/openwrt/staging_dir/toolchain-mips_24kc_gcc-12.3.0_musl/bin/mips-openwrt-linux-musl-gcc -Os -pipe -mno-branch-likely -mips32r2 -mtune=24kc -fno-caller-saves -fno-plt -fhonour-copts -msoft-float -fmacro-prefix-map=/mnt/md0/miranda/openwrt/build_dir/target-mips_24kc_musl/zlib-1.2.13=zlib-1.2.13 -mips16 -minterlink-mips16 -Wformat -fstack-protector -D_FORTIFY_SOURCE=1 -Wl -z now -Wl -z relro -DPIC -fpic -L/mnt/md0/miranda/openwrt/staging_dir/toolchain-mips_24kc_gcc-12.3.0_musl/usr/lib -L/mnt/md0/miranda/openwrt/staging_dir/toolchain-mips_24kc_gcc-12.3.0_musl/lib -znow -zrelro -v  -rdynamic CMakeFiles/cmTC_921cc.dir/CMakeCCompilerABI.c.o -o cmTC_921cc   && :]
+        ignore line: [Reading specs from /mnt/md0/miranda/openwrt/staging_dir/toolchain-mips_24kc_gcc-12.3.0_musl/lib/gcc/mips-openwrt-linux-musl/12.3.0/specs]
+        ignore line: [COLLECT_GCC=/mnt/md0/miranda/openwrt/staging_dir/toolchain-mips_24kc_gcc-12.3.0_musl/bin/mips-openwrt-linux-musl-gcc]
+        ignore line: [COLLECT_LTO_WRAPPER=/mnt/md0/miranda/openwrt/staging_dir/toolchain-mips_24kc_gcc-12.3.0_musl/libexec/gcc/mips-openwrt-linux-musl/12.3.0/lto-wrapper]
+        ignore line: [Target: mips-openwrt-linux-musl]
+        ignore line: [Configured with: /mnt/md0/miranda/openwrt/build_dir/toolchain-mips_24kc_gcc-12.3.0_musl/gcc-12.3.0/configure --with-bugurl=http://bugs.openwrt.org/ --with-pkgversion='OpenWrt GCC 12.3.0 r23497-6637af95aa' --prefix=/mnt/md0/miranda/openwrt/staging_dir/toolchain-mips_24kc_gcc-12.3.0_musl --build=x86_64-pc-linux-gnu --host=x86_64-pc-linux-gnu --target=mips-openwrt-linux-musl --with-gnu-ld --enable-target-optspace --disable-libgomp --disable-libmudflap --disable-multilib --disable-libmpx --disable-nls --disable-libssp --without-isl --without-cloog --with-host-libstdcxx=-lstdc++ --with-float=soft --with-system-zlib=/mnt/md0/miranda/openwrt/staging_dir/host --with-zstd=/mnt/md0/miranda/openwrt/staging_dir/host --with-gmp=/mnt/md0/miranda/openwrt/staging_dir/host --with-mpfr=/mnt/md0/miranda/openwrt/staging_dir/host --with-mpc=/mnt/md0/miranda/openwrt/staging_dir/host --disable-decimal-float --with-diagnostics-color=auto-if-env --enable-__cxa_atexit --enable-libstdcxx-dual-abi --with-default-libstdcxx-abi=new --with-mips-plt CFLAGS='-O2 -I/mnt/md0/miranda/openwrt/staging_dir/host/include  -pipe' CXXFLAGS='-O2 -I/mnt/md0/miranda/openwrt/staging_dir/host/include  -pipe' 'CFLAGS_FOR_TARGET=-Os -pipe -mno-branch-likely -mips32r2 -mtune=24kc -fno-caller-saves -fno-plt -fhonour-copts -msoft-float -Wformat -Werror=format-security -fstack-protector -D_FORTIFY_SOURCE=1 -Wl,-z,now -Wl,-z,relro' 'CXXFLAGS_FOR_TARGET=-Os -pipe -mno-branch-likely -mips32r2 -mtune=24kc -fno-caller-saves -fno-plt -fhonour-copts -msoft-float -Wformat -Werror=format-security -fstack-protector -D_FORTIFY_SOURCE=1 -Wl,-z,now -Wl,-z,relro' 'GOCFLAGS_FOR_TARGET=-Os -pipe -mno-branch-likely -mips32r2 -mtune=24kc -fno-caller-saves -fno-plt -fhonour-copts -msoft-float -Wformat -Werror=format-security -fstack-protector -D_FORTIFY_SOURCE=1 -Wl,-z,now -Wl,-z,relro' --with-headers=/mnt/md0/miranda/openwrt/staging_dir/toolchain-mips_24kc_gcc-12.3.0_musl/include --enable-languages=c,c++ --enable-shared --enable-threads --with-slibdir=/mnt/md0/miranda/openwrt/staging_dir/toolchain-mips_24kc_gcc-12.3.0_musl/lib --enable-plugins --enable-lto --with-libelf=/mnt/md0/miranda/openwrt/staging_dir/host --disable-libsanitizer]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 12.3.0 (OpenWrt GCC 12.3.0 r23497-6637af95aa) ]
+        ignore line: [COMPILER_PATH=/mnt/md0/miranda/openwrt/staging_dir/toolchain-mips_24kc_gcc-12.3.0_musl/libexec/gcc/mips-openwrt-linux-musl/12.3.0/:/mnt/md0/miranda/openwrt/staging_dir/toolchain-mips_24kc_gcc-12.3.0_musl/libexec/gcc/mips-openwrt-linux-musl/12.3.0/:/mnt/md0/miranda/openwrt/staging_dir/toolchain-mips_24kc_gcc-12.3.0_musl/libexec/gcc/mips-openwrt-linux-musl/:/mnt/md0/miranda/openwrt/staging_dir/toolchain-mips_24kc_gcc-12.3.0_musl/lib/gcc/mips-openwrt-linux-musl/12.3.0/:/mnt/md0/miranda/openwrt/staging_dir/toolchain-mips_24kc_gcc-12.3.0_musl/lib/gcc/mips-openwrt-linux-musl/:/mnt/md0/miranda/openwrt/staging_dir/toolchain-mips_24kc_gcc-12.3.0_musl/lib/gcc/mips-openwrt-linux-musl/12.3.0/../../../../mips-openwrt-linux-musl/bin/]
+        ignore line: [LIBRARY_PATH=/mnt/md0/miranda/openwrt/staging_dir/toolchain-mips_24kc_gcc-12.3.0_musl/lib/gcc/mips-openwrt-linux-musl/12.3.0/:/mnt/md0/miranda/openwrt/staging_dir/toolchain-mips_24kc_gcc-12.3.0_musl/lib/gcc/mips-openwrt-linux-musl/12.3.0/../../../../mips-openwrt-linux-musl/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-Os' '-pipe' '-mno-branch-likely' '-mips32r2' '-mtune=24kc' '-fno-caller-saves' '-fno-plt' '-fhonour-copts' '-msoft-float' '-fmacro-prefix-map=/mnt/md0/miranda/openwrt/build_dir/target-mips_24kc_musl/zlib-1.2.13=zlib-1.2.13' '-mips16' '-minterlink-mips16' '-Wformat=1' '-fstack-protector' '-D' '_FORTIFY_SOURCE=1' '-D' 'PIC' '-fpic' '-L/mnt/md0/miranda/openwrt/staging_dir/toolchain-mips_24kc_gcc-12.3.0_musl/usr/lib' '-L/mnt/md0/miranda/openwrt/staging_dir/toolchain-mips_24kc_gcc-12.3.0_musl/lib' '-z' 'now' '-z' 'relro' '-v' '-rdynamic' '-o' 'cmTC_921cc' '-mllsc'  '-EB' '-mabi=32' '-dumpdir' 'cmTC_921cc.']
+        link line: [ /mnt/md0/miranda/openwrt/staging_dir/toolchain-mips_24kc_gcc-12.3.0_musl/libexec/gcc/mips-openwrt-linux-musl/12.3.0/collect2 -plugin /mnt/md0/miranda/openwrt/staging_dir/toolchain-mips_24kc_gcc-12.3.0_musl/libexec/gcc/mips-openwrt-linux-musl/12.3.0/liblto_plugin.so -plugin-opt=/mnt/md0/miranda/openwrt/staging_dir/toolchain-mips_24kc_gcc-12.3.0_musl/libexec/gcc/mips-openwrt-linux-musl/12.3.0/lto-wrapper -plugin-opt=-fresolution=/mnt/md0/miranda/openwrt/tmp/ccuc51kr.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s --eh-frame-hdr -EB -mips32r2 -mips16 -export-dynamic -dynamic-linker /lib/ld-musl-mips-sf.so.1 -melf32btsmip -o cmTC_921cc -z now -z relro /mnt/md0/miranda/openwrt/staging_dir/toolchain-mips_24kc_gcc-12.3.0_musl/lib/gcc/mips-openwrt-linux-musl/12.3.0/../../../../mips-openwrt-linux-musl/lib/crt1.o /mnt/md0/miranda/openwrt/staging_dir/toolchain-mips_24kc_gcc-12.3.0_musl/lib/gcc/mips-openwrt-linux-musl/12.3.0/../../../../mips-openwrt-linux-musl/lib/crti.o /mnt/md0/miranda/openwrt/staging_dir/toolchain-mips_24kc_gcc-12.3.0_musl/lib/gcc/mips-openwrt-linux-musl/12.3.0/crtbegin.o -L/mnt/md0/miranda/openwrt/staging_dir/toolchain-mips_24kc_gcc-12.3.0_musl/usr/lib -L/mnt/md0/miranda/openwrt/staging_dir/toolchain-mips_24kc_gcc-12.3.0_musl/lib -L /mnt/md0/miranda/openwrt/staging_dir/target-mips_24kc_musl/usr/lib -rpath-link /mnt/md0/miranda/openwrt/staging_dir/target-mips_24kc_musl/usr/lib -L/mnt/md0/miranda/openwrt/staging_dir/toolchain-mips_24kc_gcc-12.3.0_musl/lib/gcc/mips-openwrt-linux-musl/12.3.0 -L/mnt/md0/miranda/openwrt/staging_dir/toolchain-mips_24kc_gcc-12.3.0_musl/lib/gcc/mips-openwrt-linux-musl/12.3.0/../../../../mips-openwrt-linux-musl/lib -z now -z relro CMakeFiles/cmTC_921cc.dir/CMakeCCompilerABI.c.o -lssp_nonshared -lgcc_s -lc -lgcc_s /mnt/md0/miranda/openwrt/staging_dir/toolchain-mips_24kc_gcc-12.3.0_musl/lib/gcc/mips-openwrt-linux-musl/12.3.0/crtend.o /mnt/md0/miranda/openwrt/staging_dir/toolchain-mips_24kc_gcc-12.3.0_musl/lib/gcc/mips-openwrt-linux-musl/12.3.0/../../../../mips-openwrt-linux-musl/lib/crtn.o]
+          arg [/mnt/md0/miranda/openwrt/staging_dir/toolchain-mips_24kc_gcc-12.3.0_musl/libexec/gcc/mips-openwrt-linux-musl/12.3.0/collect2] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [/mnt/md0/miranda/openwrt/staging_dir/toolchain-mips_24kc_gcc-12.3.0_musl/libexec/gcc/mips-openwrt-linux-musl/12.3.0/liblto_plugin.so] ==> ignore
+          arg [-plugin-opt=/mnt/md0/miranda/openwrt/staging_dir/toolchain-mips_24kc_gcc-12.3.0_musl/libexec/gcc/mips-openwrt-linux-musl/12.3.0/lto-wrapper] ==> ignore
+          arg [-plugin-opt=-fresolution=/mnt/md0/miranda/openwrt/tmp/ccuc51kr.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [-EB] ==> ignore
+          arg [-mips32r2] ==> ignore
+          arg [-mips16] ==> ignore
+          arg [-export-dynamic] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib/ld-musl-mips-sf.so.1] ==> ignore
+          arg [-melf32btsmip] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_921cc] ==> ignore
+          arg [-znow] ==> ignore
+          arg [-zrelro] ==> ignore
+          arg [/mnt/md0/miranda/openwrt/staging_dir/toolchain-mips_24kc_gcc-12.3.0_musl/lib/gcc/mips-openwrt-linux-musl/12.3.0/../../../../mips-openwrt-linux-musl/lib/crt1.o] ==> obj [/mnt/md0/miranda/openwrt/staging_dir/toolchain-mips_24kc_gcc-12.3.0_musl/lib/gcc/mips-openwrt-linux-musl/12.3.0/../../../../mips-openwrt-linux-musl/lib/crt1.o]
+          arg [/mnt/md0/miranda/openwrt/staging_dir/toolchain-mips_24kc_gcc-12.3.0_musl/lib/gcc/mips-openwrt-linux-musl/12.3.0/../../../../mips-openwrt-linux-musl/lib/crti.o] ==> obj [/mnt/md0/miranda/openwrt/staging_dir/toolchain-mips_24kc_gcc-12.3.0_musl/lib/gcc/mips-openwrt-linux-musl/12.3.0/../../../../mips-openwrt-linux-musl/lib/crti.o]
+          arg [/mnt/md0/miranda/openwrt/staging_dir/toolchain-mips_24kc_gcc-12.3.0_musl/lib/gcc/mips-openwrt-linux-musl/12.3.0/crtbegin.o] ==> obj [/mnt/md0/miranda/openwrt/staging_dir/toolchain-mips_24kc_gcc-12.3.0_musl/lib/gcc/mips-openwrt-linux-musl/12.3.0/crtbegin.o]
+          arg [-L/mnt/md0/miranda/openwrt/staging_dir/toolchain-mips_24kc_gcc-12.3.0_musl/usr/lib] ==> dir [/mnt/md0/miranda/openwrt/staging_dir/toolchain-mips_24kc_gcc-12.3.0_musl/usr/lib]
+          arg [-L/mnt/md0/miranda/openwrt/staging_dir/toolchain-mips_24kc_gcc-12.3.0_musl/lib] ==> dir [/mnt/md0/miranda/openwrt/staging_dir/toolchain-mips_24kc_gcc-12.3.0_musl/lib]
+          arg [-L/mnt/md0/miranda/openwrt/staging_dir/target-mips_24kc_musl/usr/lib] ==> dir [/mnt/md0/miranda/openwrt/staging_dir/target-mips_24kc_musl/usr/lib]
+          arg [-rpath-link] ==> ignore
+          arg [/mnt/md0/miranda/openwrt/staging_dir/target-mips_24kc_musl/usr/lib] ==> ignore
+          arg [-L/mnt/md0/miranda/openwrt/staging_dir/toolchain-mips_24kc_gcc-12.3.0_musl/lib/gcc/mips-openwrt-linux-musl/12.3.0] ==> dir [/mnt/md0/miranda/openwrt/staging_dir/toolchain-mips_24kc_gcc-12.3.0_musl/lib/gcc/mips-openwrt-linux-musl/12.3.0]
+          arg [-L/mnt/md0/miranda/openwrt/staging_dir/toolchain-mips_24kc_gcc-12.3.0_musl/lib/gcc/mips-openwrt-linux-musl/12.3.0/../../../../mips-openwrt-linux-musl/lib] ==> dir [/mnt/md0/miranda/openwrt/staging_dir/toolchain-mips_24kc_gcc-12.3.0_musl/lib/gcc/mips-openwrt-linux-musl/12.3.0/../../../../mips-openwrt-linux-musl/lib]
+          arg [-znow] ==> ignore
+          arg [-zrelro] ==> ignore
+          arg [CMakeFiles/cmTC_921cc.dir/CMakeCCompilerABI.c.o] ==> ignore
+          arg [-lssp_nonshared] ==> lib [ssp_nonshared]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lc] ==> lib [c]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [/mnt/md0/miranda/openwrt/staging_dir/toolchain-mips_24kc_gcc-12.3.0_musl/lib/gcc/mips-openwrt-linux-musl/12.3.0/crtend.o] ==> obj [/mnt/md0/miranda/openwrt/staging_dir/toolchain-mips_24kc_gcc-12.3.0_musl/lib/gcc/mips-openwrt-linux-musl/12.3.0/crtend.o]
+          arg [/mnt/md0/miranda/openwrt/staging_dir/toolchain-mips_24kc_gcc-12.3.0_musl/lib/gcc/mips-openwrt-linux-musl/12.3.0/../../../../mips-openwrt-linux-musl/lib/crtn.o] ==> obj [/mnt/md0/miranda/openwrt/staging_dir/toolchain-mips_24kc_gcc-12.3.0_musl/lib/gcc/mips-openwrt-linux-musl/12.3.0/../../../../mips-openwrt-linux-musl/lib/crtn.o]
+        collapse obj [/mnt/md0/miranda/openwrt/staging_dir/toolchain-mips_24kc_gcc-12.3.0_musl/lib/gcc/mips-openwrt-linux-musl/12.3.0/../../../../mips-openwrt-linux-musl/lib/crt1.o] ==> [/mnt/md0/miranda/openwrt/staging_dir/toolchain-mips_24kc_gcc-12.3.0_musl/mips-openwrt-linux-musl/lib/crt1.o]
+        collapse obj [/mnt/md0/miranda/openwrt/staging_dir/toolchain-mips_24kc_gcc-12.3.0_musl/lib/gcc/mips-openwrt-linux-musl/12.3.0/../../../../mips-openwrt-linux-musl/lib/crti.o] ==> [/mnt/md0/miranda/openwrt/staging_dir/toolchain-mips_24kc_gcc-12.3.0_musl/mips-openwrt-linux-musl/lib/crti.o]
+        collapse obj [/mnt/md0/miranda/openwrt/staging_dir/toolchain-mips_24kc_gcc-12.3.0_musl/lib/gcc/mips-openwrt-linux-musl/12.3.0/../../../../mips-openwrt-linux-musl/lib/crtn.o] ==> [/mnt/md0/miranda/openwrt/staging_dir/toolchain-mips_24kc_gcc-12.3.0_musl/mips-openwrt-linux-musl/lib/crtn.o]
+        collapse library dir [/mnt/md0/miranda/openwrt/staging_dir/toolchain-mips_24kc_gcc-12.3.0_musl/usr/lib] ==> [/mnt/md0/miranda/openwrt/staging_dir/toolchain-mips_24kc_gcc-12.3.0_musl/usr/lib]
+        collapse library dir [/mnt/md0/miranda/openwrt/staging_dir/toolchain-mips_24kc_gcc-12.3.0_musl/lib] ==> [/mnt/md0/miranda/openwrt/staging_dir/toolchain-mips_24kc_gcc-12.3.0_musl/lib]
+        collapse library dir [/mnt/md0/miranda/openwrt/staging_dir/target-mips_24kc_musl/usr/lib] ==> [/mnt/md0/miranda/openwrt/staging_dir/target-mips_24kc_musl/usr/lib]
+        collapse library dir [/mnt/md0/miranda/openwrt/staging_dir/toolchain-mips_24kc_gcc-12.3.0_musl/lib/gcc/mips-openwrt-linux-musl/12.3.0] ==> [/mnt/md0/miranda/openwrt/staging_dir/toolchain-mips_24kc_gcc-12.3.0_musl/lib/gcc/mips-openwrt-linux-musl/12.3.0]
+        collapse library dir [/mnt/md0/miranda/openwrt/staging_dir/toolchain-mips_24kc_gcc-12.3.0_musl/lib/gcc/mips-openwrt-linux-musl/12.3.0/../../../../mips-openwrt-linux-musl/lib] ==> [/mnt/md0/miranda/openwrt/staging_dir/toolchain-mips_24kc_gcc-12.3.0_musl/mips-openwrt-linux-musl/lib]
+        implicit libs: [ssp_nonshared;gcc_s;c;gcc_s]
+        implicit objs: [/mnt/md0/miranda/openwrt/staging_dir/toolchain-mips_24kc_gcc-12.3.0_musl/mips-openwrt-linux-musl/lib/crt1.o;/mnt/md0/miranda/openwrt/staging_dir/toolchain-mips_24kc_gcc-12.3.0_musl/mips-openwrt-linux-musl/lib/crti.o;/mnt/md0/miranda/openwrt/staging_dir/toolchain-mips_24kc_gcc-12.3.0_musl/lib/gcc/mips-openwrt-linux-musl/12.3.0/crtbegin.o;/mnt/md0/miranda/openwrt/staging_dir/toolchain-mips_24kc_gcc-12.3.0_musl/lib/gcc/mips-openwrt-linux-musl/12.3.0/crtend.o;/mnt/md0/miranda/openwrt/staging_dir/toolchain-mips_24kc_gcc-12.3.0_musl/mips-openwrt-linux-musl/lib/crtn.o]
+        implicit dirs: [/mnt/md0/miranda/openwrt/staging_dir/toolchain-mips_24kc_gcc-12.3.0_musl/usr/lib;/mnt/md0/miranda/openwrt/staging_dir/toolchain-mips_24kc_gcc-12.3.0_musl/lib;/mnt/md0/miranda/openwrt/staging_dir/target-mips_24kc_musl/usr/lib;/mnt/md0/miranda/openwrt/staging_dir/toolchain-mips_24kc_gcc-12.3.0_musl/lib/gcc/mips-openwrt-linux-musl/12.3.0;/mnt/md0/miranda/openwrt/staging_dir/toolchain-mips_24kc_gcc-12.3.0_musl/mips-openwrt-linux-musl/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/mnt/md0/miranda/openwrt/staging_dir/host/share/cmake-3.26/Modules/CheckIncludeFile.cmake:95 (try_compile)"
+      - "CMakeLists.txt:20 (check_include_file)"
+    checks:
+      - "Looking for sys/types.h"
+    directories:
+      source: "/mnt/md0/miranda/openwrt/build_dir/target-mips_24kc_musl/zlib-1.2.13/CMakeFiles/CMakeScratch/TryCompile-PgsJtC"
+      binary: "/mnt/md0/miranda/openwrt/build_dir/target-mips_24kc_musl/zlib-1.2.13/CMakeFiles/CMakeScratch/TryCompile-PgsJtC"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "-Os -pipe -mno-branch-likely -mips32r2 -mtune=24kc -fno-caller-saves -fno-plt -fhonour-copts -msoft-float -fmacro-prefix-map=/mnt/md0/miranda/openwrt/build_dir/target-mips_24kc_musl/zlib-1.2.13=zlib-1.2.13 -mips16 -minterlink-mips16 -Wformat -Werror=format-security -fstack-protector -D_FORTIFY_SOURCE=1 -Wl,-z,now -Wl,-z,relro -DPIC -fpic"
+    buildResult:
+      variable: "HAVE_SYS_TYPES_H"
+      cached: true
+      stdout: |
+        Change Dir: /mnt/md0/miranda/openwrt/build_dir/target-mips_24kc_musl/zlib-1.2.13/CMakeFiles/CMakeScratch/TryCompile-PgsJtC
+        
+        Run Build Command(s):/mnt/md0/miranda/openwrt/staging_dir/host/bin/ninja -v cmTC_abc47 && [1/2] /mnt/md0/miranda/openwrt/staging_dir/toolchain-mips_24kc_gcc-12.3.0_musl/bin/mips-openwrt-linux-musl-gcc   -Os -pipe -mno-branch-likely -mips32r2 -mtune=24kc -fno-caller-saves -fno-plt -fhonour-copts -msoft-float -fmacro-prefix-map=/mnt/md0/miranda/openwrt/build_dir/target-mips_24kc_musl/zlib-1.2.13=zlib-1.2.13 -mips16 -minterlink-mips16 -Wformat -Werror=format-security -fstack-protector -D_FORTIFY_SOURCE=1 -Wl,-z,now -Wl,-z,relro -DPIC -fpic -o CMakeFiles/cmTC_abc47.dir/CheckIncludeFile.c.o -c /mnt/md0/miranda/openwrt/build_dir/target-mips_24kc_musl/zlib-1.2.13/CMakeFiles/CMakeScratch/TryCompile-PgsJtC/CheckIncludeFile.c
+        [2/2] : && /mnt/md0/miranda/openwrt/staging_dir/toolchain-mips_24kc_gcc-12.3.0_musl/bin/mips-openwrt-linux-musl-gcc -Os -pipe -mno-branch-likely -mips32r2 -mtune=24kc -fno-caller-saves -fno-plt -fhonour-copts -msoft-float -fmacro-prefix-map=/mnt/md0/miranda/openwrt/build_dir/target-mips_24kc_musl/zlib-1.2.13=zlib-1.2.13 -mips16 -minterlink-mips16 -Wformat -Werror=format-security -fstack-protector -D_FORTIFY_SOURCE=1 -Wl,-z,now -Wl,-z,relro -DPIC -fpic -L/mnt/md0/miranda/openwrt/staging_dir/toolchain-mips_24kc_gcc-12.3.0_musl/usr/lib -L/mnt/md0/miranda/openwrt/staging_dir/toolchain-mips_24kc_gcc-12.3.0_musl/lib -znow -zrelro   -rdynamic CMakeFiles/cmTC_abc47.dir/CheckIncludeFile.c.o -o cmTC_abc47   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/mnt/md0/miranda/openwrt/staging_dir/host/share/cmake-3.26/Modules/CheckIncludeFile.cmake:95 (try_compile)"
+      - "CMakeLists.txt:21 (check_include_file)"
+    checks:
+      - "Looking for stdint.h"
+    directories:
+      source: "/mnt/md0/miranda/openwrt/build_dir/target-mips_24kc_musl/zlib-1.2.13/CMakeFiles/CMakeScratch/TryCompile-m24sbm"
+      binary: "/mnt/md0/miranda/openwrt/build_dir/target-mips_24kc_musl/zlib-1.2.13/CMakeFiles/CMakeScratch/TryCompile-m24sbm"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "-Os -pipe -mno-branch-likely -mips32r2 -mtune=24kc -fno-caller-saves -fno-plt -fhonour-copts -msoft-float -fmacro-prefix-map=/mnt/md0/miranda/openwrt/build_dir/target-mips_24kc_musl/zlib-1.2.13=zlib-1.2.13 -mips16 -minterlink-mips16 -Wformat -Werror=format-security -fstack-protector -D_FORTIFY_SOURCE=1 -Wl,-z,now -Wl,-z,relro -DPIC -fpic"
+    buildResult:
+      variable: "HAVE_STDINT_H"
+      cached: true
+      stdout: |
+        Change Dir: /mnt/md0/miranda/openwrt/build_dir/target-mips_24kc_musl/zlib-1.2.13/CMakeFiles/CMakeScratch/TryCompile-m24sbm
+        
+        Run Build Command(s):/mnt/md0/miranda/openwrt/staging_dir/host/bin/ninja -v cmTC_c1bcb && [1/2] /mnt/md0/miranda/openwrt/staging_dir/toolchain-mips_24kc_gcc-12.3.0_musl/bin/mips-openwrt-linux-musl-gcc   -Os -pipe -mno-branch-likely -mips32r2 -mtune=24kc -fno-caller-saves -fno-plt -fhonour-copts -msoft-float -fmacro-prefix-map=/mnt/md0/miranda/openwrt/build_dir/target-mips_24kc_musl/zlib-1.2.13=zlib-1.2.13 -mips16 -minterlink-mips16 -Wformat -Werror=format-security -fstack-protector -D_FORTIFY_SOURCE=1 -Wl,-z,now -Wl,-z,relro -DPIC -fpic -o CMakeFiles/cmTC_c1bcb.dir/CheckIncludeFile.c.o -c /mnt/md0/miranda/openwrt/build_dir/target-mips_24kc_musl/zlib-1.2.13/CMakeFiles/CMakeScratch/TryCompile-m24sbm/CheckIncludeFile.c
+        [2/2] : && /mnt/md0/miranda/openwrt/staging_dir/toolchain-mips_24kc_gcc-12.3.0_musl/bin/mips-openwrt-linux-musl-gcc -Os -pipe -mno-branch-likely -mips32r2 -mtune=24kc -fno-caller-saves -fno-plt -fhonour-copts -msoft-float -fmacro-prefix-map=/mnt/md0/miranda/openwrt/build_dir/target-mips_24kc_musl/zlib-1.2.13=zlib-1.2.13 -mips16 -minterlink-mips16 -Wformat -Werror=format-security -fstack-protector -D_FORTIFY_SOURCE=1 -Wl,-z,now -Wl,-z,relro -DPIC -fpic -L/mnt/md0/miranda/openwrt/staging_dir/toolchain-mips_24kc_gcc-12.3.0_musl/usr/lib -L/mnt/md0/miranda/openwrt/staging_dir/toolchain-mips_24kc_gcc-12.3.0_musl/lib -znow -zrelro   -rdynamic CMakeFiles/cmTC_c1bcb.dir/CheckIncludeFile.c.o -o cmTC_c1bcb   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/mnt/md0/miranda/openwrt/staging_dir/host/share/cmake-3.26/Modules/CheckIncludeFile.cmake:95 (try_compile)"
+      - "CMakeLists.txt:22 (check_include_file)"
+    checks:
+      - "Looking for stddef.h"
+    directories:
+      source: "/mnt/md0/miranda/openwrt/build_dir/target-mips_24kc_musl/zlib-1.2.13/CMakeFiles/CMakeScratch/TryCompile-It4ddU"
+      binary: "/mnt/md0/miranda/openwrt/build_dir/target-mips_24kc_musl/zlib-1.2.13/CMakeFiles/CMakeScratch/TryCompile-It4ddU"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "-Os -pipe -mno-branch-likely -mips32r2 -mtune=24kc -fno-caller-saves -fno-plt -fhonour-copts -msoft-float -fmacro-prefix-map=/mnt/md0/miranda/openwrt/build_dir/target-mips_24kc_musl/zlib-1.2.13=zlib-1.2.13 -mips16 -minterlink-mips16 -Wformat -Werror=format-security -fstack-protector -D_FORTIFY_SOURCE=1 -Wl,-z,now -Wl,-z,relro -DPIC -fpic"
+    buildResult:
+      variable: "HAVE_STDDEF_H"
+      cached: true
+      stdout: |
+        Change Dir: /mnt/md0/miranda/openwrt/build_dir/target-mips_24kc_musl/zlib-1.2.13/CMakeFiles/CMakeScratch/TryCompile-It4ddU
+        
+        Run Build Command(s):/mnt/md0/miranda/openwrt/staging_dir/host/bin/ninja -v cmTC_d5d4e && [1/2] /mnt/md0/miranda/openwrt/staging_dir/toolchain-mips_24kc_gcc-12.3.0_musl/bin/mips-openwrt-linux-musl-gcc   -Os -pipe -mno-branch-likely -mips32r2 -mtune=24kc -fno-caller-saves -fno-plt -fhonour-copts -msoft-float -fmacro-prefix-map=/mnt/md0/miranda/openwrt/build_dir/target-mips_24kc_musl/zlib-1.2.13=zlib-1.2.13 -mips16 -minterlink-mips16 -Wformat -Werror=format-security -fstack-protector -D_FORTIFY_SOURCE=1 -Wl,-z,now -Wl,-z,relro -DPIC -fpic -o CMakeFiles/cmTC_d5d4e.dir/CheckIncludeFile.c.o -c /mnt/md0/miranda/openwrt/build_dir/target-mips_24kc_musl/zlib-1.2.13/CMakeFiles/CMakeScratch/TryCompile-It4ddU/CheckIncludeFile.c
+        [2/2] : && /mnt/md0/miranda/openwrt/staging_dir/toolchain-mips_24kc_gcc-12.3.0_musl/bin/mips-openwrt-linux-musl-gcc -Os -pipe -mno-branch-likely -mips32r2 -mtune=24kc -fno-caller-saves -fno-plt -fhonour-copts -msoft-float -fmacro-prefix-map=/mnt/md0/miranda/openwrt/build_dir/target-mips_24kc_musl/zlib-1.2.13=zlib-1.2.13 -mips16 -minterlink-mips16 -Wformat -Werror=format-security -fstack-protector -D_FORTIFY_SOURCE=1 -Wl,-z,now -Wl,-z,relro -DPIC -fpic -L/mnt/md0/miranda/openwrt/staging_dir/toolchain-mips_24kc_gcc-12.3.0_musl/usr/lib -L/mnt/md0/miranda/openwrt/staging_dir/toolchain-mips_24kc_gcc-12.3.0_musl/lib -znow -zrelro   -rdynamic CMakeFiles/cmTC_d5d4e.dir/CheckIncludeFile.c.o -o cmTC_d5d4e   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/mnt/md0/miranda/openwrt/staging_dir/host/share/cmake-3.26/Modules/CheckTypeSize.cmake:148 (try_compile)"
+      - "/mnt/md0/miranda/openwrt/staging_dir/host/share/cmake-3.26/Modules/CheckTypeSize.cmake:273 (__check_type_size_impl)"
+      - "CMakeLists.txt:40 (check_type_size)"
+    checks:
+      - "Check size of off64_t"
+    directories:
+      source: "/mnt/md0/miranda/openwrt/build_dir/target-mips_24kc_musl/zlib-1.2.13/CMakeFiles/CMakeScratch/TryCompile-CWgM01"
+      binary: "/mnt/md0/miranda/openwrt/build_dir/target-mips_24kc_musl/zlib-1.2.13/CMakeFiles/CMakeScratch/TryCompile-CWgM01"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "-Os -pipe -mno-branch-likely -mips32r2 -mtune=24kc -fno-caller-saves -fno-plt -fhonour-copts -msoft-float -fmacro-prefix-map=/mnt/md0/miranda/openwrt/build_dir/target-mips_24kc_musl/zlib-1.2.13=zlib-1.2.13 -mips16 -minterlink-mips16 -Wformat -Werror=format-security -fstack-protector -D_FORTIFY_SOURCE=1 -Wl,-z,now -Wl,-z,relro -DPIC -fpic"
+    buildResult:
+      variable: "HAVE_OFF64_T"
+      cached: true
+      stdout: |
+        Change Dir: /mnt/md0/miranda/openwrt/build_dir/target-mips_24kc_musl/zlib-1.2.13/CMakeFiles/CMakeScratch/TryCompile-CWgM01
+        
+        Run Build Command(s):/mnt/md0/miranda/openwrt/staging_dir/host/bin/ninja -v cmTC_68b78 && [1/2] /mnt/md0/miranda/openwrt/staging_dir/toolchain-mips_24kc_gcc-12.3.0_musl/bin/mips-openwrt-linux-musl-gcc -DHAVE_STDDEF_H -DHAVE_STDINT_H -DHAVE_SYS_TYPES_H -D_LARGEFILE64_SOURCE=1  -Os -pipe -mno-branch-likely -mips32r2 -mtune=24kc -fno-caller-saves -fno-plt -fhonour-copts -msoft-float -fmacro-prefix-map=/mnt/md0/miranda/openwrt/build_dir/target-mips_24kc_musl/zlib-1.2.13=zlib-1.2.13 -mips16 -minterlink-mips16 -Wformat -Werror=format-security -fstack-protector -D_FORTIFY_SOURCE=1 -Wl,-z,now -Wl,-z,relro -DPIC -fpic -o CMakeFiles/cmTC_68b78.dir/OFF64_T.c.o -c /mnt/md0/miranda/openwrt/build_dir/target-mips_24kc_musl/zlib-1.2.13/CMakeFiles/CMakeScratch/TryCompile-CWgM01/OFF64_T.c
+        [2/2] : && /mnt/md0/miranda/openwrt/staging_dir/toolchain-mips_24kc_gcc-12.3.0_musl/bin/mips-openwrt-linux-musl-gcc -Os -pipe -mno-branch-likely -mips32r2 -mtune=24kc -fno-caller-saves -fno-plt -fhonour-copts -msoft-float -fmacro-prefix-map=/mnt/md0/miranda/openwrt/build_dir/target-mips_24kc_musl/zlib-1.2.13=zlib-1.2.13 -mips16 -minterlink-mips16 -Wformat -Werror=format-security -fstack-protector -D_FORTIFY_SOURCE=1 -Wl,-z,now -Wl,-z,relro -DPIC -fpic -L/mnt/md0/miranda/openwrt/staging_dir/toolchain-mips_24kc_gcc-12.3.0_musl/usr/lib -L/mnt/md0/miranda/openwrt/staging_dir/toolchain-mips_24kc_gcc-12.3.0_musl/lib -znow -zrelro   -rdynamic CMakeFiles/cmTC_68b78.dir/OFF64_T.c.o -o cmTC_68b78   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/mnt/md0/miranda/openwrt/staging_dir/host/share/cmake-3.26/Modules/CheckFunctionExists.cmake:91 (try_compile)"
+      - "CMakeLists.txt:49 (check_function_exists)"
+    checks:
+      - "Looking for fseeko"
+    directories:
+      source: "/mnt/md0/miranda/openwrt/build_dir/target-mips_24kc_musl/zlib-1.2.13/CMakeFiles/CMakeScratch/TryCompile-ySAxac"
+      binary: "/mnt/md0/miranda/openwrt/build_dir/target-mips_24kc_musl/zlib-1.2.13/CMakeFiles/CMakeScratch/TryCompile-ySAxac"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "-Os -pipe -mno-branch-likely -mips32r2 -mtune=24kc -fno-caller-saves -fno-plt -fhonour-copts -msoft-float -fmacro-prefix-map=/mnt/md0/miranda/openwrt/build_dir/target-mips_24kc_musl/zlib-1.2.13=zlib-1.2.13 -mips16 -minterlink-mips16 -Wformat -Werror=format-security -fstack-protector -D_FORTIFY_SOURCE=1 -Wl,-z,now -Wl,-z,relro -DPIC -fpic"
+    buildResult:
+      variable: "HAVE_FSEEKO"
+      cached: true
+      stdout: |
+        Change Dir: /mnt/md0/miranda/openwrt/build_dir/target-mips_24kc_musl/zlib-1.2.13/CMakeFiles/CMakeScratch/TryCompile-ySAxac
+        
+        Run Build Command(s):/mnt/md0/miranda/openwrt/staging_dir/host/bin/ninja -v cmTC_f483b && [1/2] /mnt/md0/miranda/openwrt/staging_dir/toolchain-mips_24kc_gcc-12.3.0_musl/bin/mips-openwrt-linux-musl-gcc   -Os -pipe -mno-branch-likely -mips32r2 -mtune=24kc -fno-caller-saves -fno-plt -fhonour-copts -msoft-float -fmacro-prefix-map=/mnt/md0/miranda/openwrt/build_dir/target-mips_24kc_musl/zlib-1.2.13=zlib-1.2.13 -mips16 -minterlink-mips16 -Wformat -Werror=format-security -fstack-protector -D_FORTIFY_SOURCE=1 -Wl,-z,now -Wl,-z,relro -DPIC -fpic -DCHECK_FUNCTION_EXISTS=fseeko -o CMakeFiles/cmTC_f483b.dir/CheckFunctionExists.c.o -c /mnt/md0/miranda/openwrt/build_dir/target-mips_24kc_musl/zlib-1.2.13/CMakeFiles/CMakeScratch/TryCompile-ySAxac/CheckFunctionExists.c
+        [2/2] : && /mnt/md0/miranda/openwrt/staging_dir/toolchain-mips_24kc_gcc-12.3.0_musl/bin/mips-openwrt-linux-musl-gcc -Os -pipe -mno-branch-likely -mips32r2 -mtune=24kc -fno-caller-saves -fno-plt -fhonour-copts -msoft-float -fmacro-prefix-map=/mnt/md0/miranda/openwrt/build_dir/target-mips_24kc_musl/zlib-1.2.13=zlib-1.2.13 -mips16 -minterlink-mips16 -Wformat -Werror=format-security -fstack-protector -D_FORTIFY_SOURCE=1 -Wl,-z,now -Wl,-z,relro -DPIC -fpic -DCHECK_FUNCTION_EXISTS=fseeko -L/mnt/md0/miranda/openwrt/staging_dir/toolchain-mips_24kc_gcc-12.3.0_musl/usr/lib -L/mnt/md0/miranda/openwrt/staging_dir/toolchain-mips_24kc_gcc-12.3.0_musl/lib -znow -zrelro   -rdynamic CMakeFiles/cmTC_f483b.dir/CheckFunctionExists.c.o -o cmTC_f483b   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/mnt/md0/miranda/openwrt/staging_dir/host/share/cmake-3.26/Modules/CheckIncludeFile.cmake:95 (try_compile)"
+      - "CMakeLists.txt:57 (check_include_file)"
+    checks:
+      - "Looking for unistd.h"
+    directories:
+      source: "/mnt/md0/miranda/openwrt/build_dir/target-mips_24kc_musl/zlib-1.2.13/CMakeFiles/CMakeScratch/TryCompile-Kvo8wX"
+      binary: "/mnt/md0/miranda/openwrt/build_dir/target-mips_24kc_musl/zlib-1.2.13/CMakeFiles/CMakeScratch/TryCompile-Kvo8wX"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "-Os -pipe -mno-branch-likely -mips32r2 -mtune=24kc -fno-caller-saves -fno-plt -fhonour-copts -msoft-float -fmacro-prefix-map=/mnt/md0/miranda/openwrt/build_dir/target-mips_24kc_musl/zlib-1.2.13=zlib-1.2.13 -mips16 -minterlink-mips16 -Wformat -Werror=format-security -fstack-protector -D_FORTIFY_SOURCE=1 -Wl,-z,now -Wl,-z,relro -DPIC -fpic"
+    buildResult:
+      variable: "Z_HAVE_UNISTD_H"
+      cached: true
+      stdout: |
+        Change Dir: /mnt/md0/miranda/openwrt/build_dir/target-mips_24kc_musl/zlib-1.2.13/CMakeFiles/CMakeScratch/TryCompile-Kvo8wX
+        
+        Run Build Command(s):/mnt/md0/miranda/openwrt/staging_dir/host/bin/ninja -v cmTC_96957 && [1/2] /mnt/md0/miranda/openwrt/staging_dir/toolchain-mips_24kc_gcc-12.3.0_musl/bin/mips-openwrt-linux-musl-gcc   -Os -pipe -mno-branch-likely -mips32r2 -mtune=24kc -fno-caller-saves -fno-plt -fhonour-copts -msoft-float -fmacro-prefix-map=/mnt/md0/miranda/openwrt/build_dir/target-mips_24kc_musl/zlib-1.2.13=zlib-1.2.13 -mips16 -minterlink-mips16 -Wformat -Werror=format-security -fstack-protector -D_FORTIFY_SOURCE=1 -Wl,-z,now -Wl,-z,relro -DPIC -fpic -o CMakeFiles/cmTC_96957.dir/CheckIncludeFile.c.o -c /mnt/md0/miranda/openwrt/build_dir/target-mips_24kc_musl/zlib-1.2.13/CMakeFiles/CMakeScratch/TryCompile-Kvo8wX/CheckIncludeFile.c
+        [2/2] : && /mnt/md0/miranda/openwrt/staging_dir/toolchain-mips_24kc_gcc-12.3.0_musl/bin/mips-openwrt-linux-musl-gcc -Os -pipe -mno-branch-likely -mips32r2 -mtune=24kc -fno-caller-saves -fno-plt -fhonour-copts -msoft-float -fmacro-prefix-map=/mnt/md0/miranda/openwrt/build_dir/target-mips_24kc_musl/zlib-1.2.13=zlib-1.2.13 -mips16 -minterlink-mips16 -Wformat -Werror=format-security -fstack-protector -D_FORTIFY_SOURCE=1 -Wl,-z,now -Wl,-z,relro -DPIC -fpic -L/mnt/md0/miranda/openwrt/staging_dir/toolchain-mips_24kc_gcc-12.3.0_musl/usr/lib -L/mnt/md0/miranda/openwrt/staging_dir/toolchain-mips_24kc_gcc-12.3.0_musl/lib -znow -zrelro   -rdynamic CMakeFiles/cmTC_96957.dir/CheckIncludeFile.c.o -o cmTC_96957   && :
+        
+      exitCode: 0
+...

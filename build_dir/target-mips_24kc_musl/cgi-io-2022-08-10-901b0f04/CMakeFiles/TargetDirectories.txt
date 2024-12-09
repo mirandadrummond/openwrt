@@ -1,0 +1,8 @@
+/mnt/md0/miranda/openwrt/build_dir/target-mips_24kc_musl/cgi-io-2022-08-10-901b0f04/CMakeFiles/cgi-lib.dir
+/mnt/md0/miranda/openwrt/build_dir/target-mips_24kc_musl/cgi-io-2022-08-10-901b0f04/CMakeFiles/cgi-io.dir
+/mnt/md0/miranda/openwrt/build_dir/target-mips_24kc_musl/cgi-io-2022-08-10-901b0f04/CMakeFiles/edit_cache.dir
+/mnt/md0/miranda/openwrt/build_dir/target-mips_24kc_musl/cgi-io-2022-08-10-901b0f04/CMakeFiles/rebuild_cache.dir
+/mnt/md0/miranda/openwrt/build_dir/target-mips_24kc_musl/cgi-io-2022-08-10-901b0f04/CMakeFiles/list_install_components.dir
+/mnt/md0/miranda/openwrt/build_dir/target-mips_24kc_musl/cgi-io-2022-08-10-901b0f04/CMakeFiles/install.dir
+/mnt/md0/miranda/openwrt/build_dir/target-mips_24kc_musl/cgi-io-2022-08-10-901b0f04/CMakeFiles/install/local.dir
+/mnt/md0/miranda/openwrt/build_dir/target-mips_24kc_musl/cgi-io-2022-08-10-901b0f04/CMakeFiles/install/strip.dir

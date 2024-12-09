@@ -1,0 +1,7 @@
+/mnt/md0/miranda/openwrt/build_dir/target-mips_24kc_musl/jansson-2.14/CMakeFiles/jansson.dir
+/mnt/md0/miranda/openwrt/build_dir/target-mips_24kc_musl/jansson-2.14/CMakeFiles/edit_cache.dir
+/mnt/md0/miranda/openwrt/build_dir/target-mips_24kc_musl/jansson-2.14/CMakeFiles/rebuild_cache.dir
+/mnt/md0/miranda/openwrt/build_dir/target-mips_24kc_musl/jansson-2.14/CMakeFiles/list_install_components.dir
+/mnt/md0/miranda/openwrt/build_dir/target-mips_24kc_musl/jansson-2.14/CMakeFiles/install.dir
+/mnt/md0/miranda/openwrt/build_dir/target-mips_24kc_musl/jansson-2.14/CMakeFiles/install/local.dir
+/mnt/md0/miranda/openwrt/build_dir/target-mips_24kc_musl/jansson-2.14/CMakeFiles/install/strip.dir

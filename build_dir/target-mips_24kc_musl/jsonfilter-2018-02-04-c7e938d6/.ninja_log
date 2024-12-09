@@ -1,0 +1,12 @@
+# ninja log v5
+1	235	1729757109256733894	contrib/lemon	7260be223332a0dd
+1	235	1729757109256733894	/mnt/md0/miranda/openwrt/build_dir/target-mips_24kc_musl/jsonfilter-2018-02-04-c7e938d6/contrib/lemon	7260be223332a0dd
+235	237	1729757109260733837	parser.c	c8e1dec760510662
+235	237	1729757109260733837	/mnt/md0/miranda/openwrt/build_dir/target-mips_24kc_musl/jsonfilter-2018-02-04-c7e938d6/parser.c	c8e1dec760510662
+237	339	1729757109360732409	CMakeFiles/jsonpath.dir/main.c.o	e0dbf84fa0b75b08
+339	373	1729757109396731894	CMakeFiles/jsonpath.dir/ast.c.o	e82f4f534cf50873
+373	463	1729757109484730637	CMakeFiles/jsonpath.dir/lexer.c.o	ef59a5a509e8fdaf
+463	526	1729757109548729723	CMakeFiles/jsonpath.dir/parser.c.o	249952bc16ad0235
+526	594	1729757109616728751	CMakeFiles/jsonpath.dir/matcher.c.o	898f73159fd6fd75
+594	603	1729757109624728637	jsonpath	459dd27bcb9ca380
+1	5	0	CMakeFiles/install.util	620fab4bfc328756

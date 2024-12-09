@@ -1,0 +1,10 @@
+/mnt/md0/miranda/openwrt/build_dir/target-mips_24kc_musl/pcre2-10.42/CMakeFiles/pcre2-8-static.dir
+/mnt/md0/miranda/openwrt/build_dir/target-mips_24kc_musl/pcre2-10.42/CMakeFiles/pcre2-posix-static.dir
+/mnt/md0/miranda/openwrt/build_dir/target-mips_24kc_musl/pcre2-10.42/CMakeFiles/pcre2-8-shared.dir
+/mnt/md0/miranda/openwrt/build_dir/target-mips_24kc_musl/pcre2-10.42/CMakeFiles/pcre2-posix-shared.dir
+/mnt/md0/miranda/openwrt/build_dir/target-mips_24kc_musl/pcre2-10.42/CMakeFiles/edit_cache.dir
+/mnt/md0/miranda/openwrt/build_dir/target-mips_24kc_musl/pcre2-10.42/CMakeFiles/rebuild_cache.dir
+/mnt/md0/miranda/openwrt/build_dir/target-mips_24kc_musl/pcre2-10.42/CMakeFiles/list_install_components.dir
+/mnt/md0/miranda/openwrt/build_dir/target-mips_24kc_musl/pcre2-10.42/CMakeFiles/install.dir
+/mnt/md0/miranda/openwrt/build_dir/target-mips_24kc_musl/pcre2-10.42/CMakeFiles/install/local.dir
+/mnt/md0/miranda/openwrt/build_dir/target-mips_24kc_musl/pcre2-10.42/CMakeFiles/install/strip.dir

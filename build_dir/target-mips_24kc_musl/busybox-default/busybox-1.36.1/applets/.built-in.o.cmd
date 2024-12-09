@@ -1,0 +1,1 @@
+cmd_applets/built-in.o :=  mips-openwrt-linux-musl-gcc -nostdlib -L/mnt/md0/miranda/openwrt/staging_dir/toolchain-mips_24kc_gcc-12.3.0_musl/usr/lib -L/mnt/md0/miranda/openwrt/staging_dir/toolchain-mips_24kc_gcc-12.3.0_musl/lib -flto=auto -fuse-linker-plugin -znow -zrelro -r -o applets/built-in.o applets/applets.o

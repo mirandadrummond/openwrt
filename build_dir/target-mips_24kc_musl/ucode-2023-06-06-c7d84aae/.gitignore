@@ -1,0 +1,15 @@
+Makefile
+CMakeCache.txt
+CMakeFiles
+*.cmake
+install_manifest.txt
+parser.[ch]
+parser.out
+contrib/lemon
+/ucode
+/utpl
+/ucc
+*.so*
+tests/cram/*.t.err
+tests/cram/.venv
+examples/

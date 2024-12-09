@@ -1,0 +1,10 @@
+/mnt/md0/miranda/openwrt/build_dir/target-mips_24kc_musl/uhttpd-2023-06-25-34a8a74d/CMakeFiles/uhttpd.dir
+/mnt/md0/miranda/openwrt/build_dir/target-mips_24kc_musl/uhttpd-2023-06-25-34a8a74d/CMakeFiles/uhttpd_lua.dir
+/mnt/md0/miranda/openwrt/build_dir/target-mips_24kc_musl/uhttpd-2023-06-25-34a8a74d/CMakeFiles/uhttpd_ucode.dir
+/mnt/md0/miranda/openwrt/build_dir/target-mips_24kc_musl/uhttpd-2023-06-25-34a8a74d/CMakeFiles/uhttpd_ubus.dir
+/mnt/md0/miranda/openwrt/build_dir/target-mips_24kc_musl/uhttpd-2023-06-25-34a8a74d/CMakeFiles/edit_cache.dir
+/mnt/md0/miranda/openwrt/build_dir/target-mips_24kc_musl/uhttpd-2023-06-25-34a8a74d/CMakeFiles/rebuild_cache.dir
+/mnt/md0/miranda/openwrt/build_dir/target-mips_24kc_musl/uhttpd-2023-06-25-34a8a74d/CMakeFiles/list_install_components.dir
+/mnt/md0/miranda/openwrt/build_dir/target-mips_24kc_musl/uhttpd-2023-06-25-34a8a74d/CMakeFiles/install.dir
+/mnt/md0/miranda/openwrt/build_dir/target-mips_24kc_musl/uhttpd-2023-06-25-34a8a74d/CMakeFiles/install/local.dir
+/mnt/md0/miranda/openwrt/build_dir/target-mips_24kc_musl/uhttpd-2023-06-25-34a8a74d/CMakeFiles/install/strip.dir
